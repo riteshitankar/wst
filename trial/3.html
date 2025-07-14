@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .h, .f{
+            border: 1px solid black;
+            height: 50px;
+            align-content: center;
+            text-align: center;
+        }
+        .head, .foot{
+            
+            background-color: yellowgreen;
+        }
+        .nav{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .navtab{
+            padding: 1rem;
+            margin: 1rem;
+            border: 1px solid red;
+
+        }
+        .main{
+            background-color: gray;
+            border: 1px solid red;
+            display: flex;
+
+        }
+        .card{
+            flex-grow: 1;
+            margin: 0.5rem;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1 class="h">Power Grid : Store or Homepage</h1>
+    </div>
+    <div class="nav">
+        <div class="navtab1 navtab">Homepage</div>
+        <div class="navtab2 navtab">Homepage</div>
+        <div class="navtab3 navtab">Homepage</div>
+        <div class="navtab4 navtab">Homepage</div>
+        <div class="navtab5 navtab">Homepage</div>
+    </div>
+    <div class="main">
+        <div class="card card1">
+            <img src="/source/gandhiji.webp" alt="alternatetext" width="100%">
+            l
+        </div>
+        <div class="card card2">
+            <img src="/source/gandhiji.webp" alt="alternatetext" width="100%">
+            l
+        </div>
+        <div class="card card3">
+            <img src="/source/gandhiji.webp" alt="alternatetext" width="100%">
+            l
+        </div>
+    </div>
+    <div class="foot">
+        <div class="f">Copyright c 2016</div>
+    </div>
+    <h1>
+        DONE >>> RITANKAR
+    </h1>
+    </body>
+    </html>
+    

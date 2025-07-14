@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .container, .items{
+            border: 1px dotted red;
+            
+            justify-items: center;
+            align-items: center;
+        }
+        .container{
+            height: 50vh;
+            width: 50vw;
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(3,1fr);
+        }
+        .item1{
+            /* 4,7 */
+            grid-row: 1/4;
+            grid-column: 1/2;
+            justify-self: center;
+            align-self: center;
+        }
+        .item4, .item7{
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">item1</div>
+        <div class="items item2">item2</div>
+        <div class="items item3">item3</div>
+        <div class="items item4">item4</div>
+        <div class="items item5">item5</div>
+        <div class="items item6">item6</div>
+        <div class="items item7">item7</div>
+        <div class="items item8">item8</div>
+        <div class="items item9">item9</div>
+    </div>
+</body>
+</html>

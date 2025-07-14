@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>introcard 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-transform: capitalize;
+            font-size: 1.3rem;
+        }
+
+        .outside {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+
+        }
+
+        select {
+            color: red;
+        }
+
+        input {
+            color: blue;
+            text-transform: uppercase;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        option {
+            color: white;
+            background-color: black;
+        }
+
+        .nav {
+            /* border: 1px solid red; */
+            height: 10vh;
+            /* width: 100vw; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 3rem;
+            padding-right: 3rem;
+
+        }
+
+        .main {
+            /* border: 1px solid black; */
+            height: 90vh;
+        }
+
+        .logo {
+            /* border: 1px solid green; */
+            height: 10vh;
+            width: auto;
+        }
+
+        .nav img {
+            /* border: 1px solid purple; */
+            height: 8vh;
+            width: auto;
+            padding: 1vh;
+        }
+
+        select {
+            border: none;
+        }
+
+        .main {
+            background-image: url("so/boyimg.jpg");
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: row;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            justify-content: space-between;
+        }
+
+        .p1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+
+        .head1 {
+            font-size: 80px;
+            font-weight: 900;
+            color: whitesmoke;
+        }
+
+        .head2 {
+            font-size: 40px;
+            font-weight: 700;
+            color: whitesmoke;
+        }
+
+        .p3 {
+            display: flex;
+            align-items: center;
+        }
+
+        .card {
+            background-color: aliceblue;
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.2rem;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-top: 55px;
+            /* padding-bottom: 50px; */
+        }
+
+        .car_no {
+            font-size: 45px;
+            /* height: 100px; */
+        }
+
+        input,
+        button {
+            height: 60px;
+            width: 600px;
+            font-size: 40px;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        .or {
+            display: block;
+        }
+
+        .g1,
+        .g2 {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .brand_logor1,
+        .brand_logor2 {
+            /* border: 1px solid red; */
+            width: 120px;
+            height: 120px;
+            text-align: center;
+            align-content: center;
+            gap: 1rem;
+        }
+
+        .car_brand_logo {
+            width: 100px;
+            height: auto;
+        }
+
+        .price {
+            font-size: 23px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: white;
+            background-color: orange;
+            border: none;
+        }
+
+        .brand_logor1:hover {
+            background-color: gray;
+            /* border: 1px solid red; */
+            border-radius: 25px;
+        }
+
+        .brand_logor2:hover {
+            background-color: gray;
+            /* border: 1px solid red; */
+            border-radius: 25px;
+        }
+
+        .ar {
+            /* border: 1px solid red; */
+            height: 40px;
+        }
+
+        .aa {
+            text-decoration: double;
+            color: orangered;
+        }
+
+        .aa:hover {
+            font-weight: 800;
+            height: 55px;
+        }
+
+        .p1 {
+            padding: 1rem;
+        }
+
+        .tag {
+            height: 60px;
+            width: 60px;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            align-self: flex-end;
+
+            border-radius: 25px 0px 0px 25px;
+            position: fixed;
+            z-index: 22;
+            bottom: 10%;
+            background-color: darkorange;
+            border: none;
+        }
+
+        .tag:hover,
+        .tag>a:hover {
+            background-color: blue;
+            cursor: help;
+
+        }
+
+        .tag>a {
+            text-decoration: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 90px;
+            padding: 7px;
+        }
+
+        .price {
+            cursor: pointer;
+        }
+
+        .main2 {
+            display: flex;
+            flex-direction: column;
+            /* border: 1px dotted green; */
+            align-items: center;
+            /* align-self: flex-start; */
+        }
+
+        .photos_details {
+            display: flex;
+            /* gap: 1.5rem; */
+            /* border: 1px solid red; */
+            flex-direction: row;
+            width: 90vw;
+            justify-content: space-between;
+        }
+
+        .part1,
+        .part2,
+        .part3 {
+
+            width: 28vw;
+            /* border: 1px solid yellow; */
+            display: flex;
+            flex-direction: column;
+            box-shadow: 4px 8px 12px grey;
+            border-radius: 25px;
+
+        }
+
+        .images {
+            border-radius: 25px;
+            width: 100%;
+            height: auto;
+        }
+
+        .main2 .heading {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .main2 .descr {
+            color: rgb(61, 61, 61);
+        }
+
+        .main2 .num {
+            color: gray;
+            padding: 15px;
+            /* border: 1px dotted brown; */
+            align-self: flex-start;
+            border-radius: 100%;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            position: relative;
+            top: -50px;
+            right: -20px;
+            background-color: white;
+            font-weight: 600;
+        }
+
+        .heading,
+        .descr {
+            padding: 0rem 2rem;
+        }
+
+        .head {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .ctickit {
+            width: 19vw;
+            /* border: 1px solid blue; */
+            border-radius: 25px;
+            box-shadow: 4px 8px 12px grey;
+            padding: 20px;
+            background-color: aliceblue;
+            /* margin: 1.2rem; */
+
+        }
+
+        .main .head2 {
+            color: white;
+        }
+
+        .head2 {
+            font-size: 1.4rem;
+            font-size: 600;
+            color: black;
+        }
+
+        .re1,
+        .re2,
+        .re3 {
+            position: relative;
+            bottom: 10px;
+            padding-left: 2rem;
+        }
+
+        .rate {
+            /* border: 1px dashed black; */
+            display: flex;
+            flex-direction: row;
+            width: 90vw;
+            gap: 3rem;
+        }
+
+        .fromsite {
+            /* border: 1px dashed black; */
+            flex-grow: 1;
+            border-radius: 25px;
+        }
+
+        .onsite {
+            /* border: 1px dashed black; */
+            flex-grow: 4;
+            display: flex;
+        }
+
+        .rate>.fromsite>.div1 {
+            color: green;
+            font-size: 3rem;
+        }
+
+        .rate>.fromsite>.div2 {
+            /* color: green; */
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        .rate>.fromsite>.div3 {
+            /* color: green; */
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        .platimags {
+            height: 100px;
+            width: 415px;
+            background-color: aliceblue;
+            
+        }
+
+        .review {
+            /* width: 40vw; */
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column;
+            box-shadow: 4px 8px 12px gray;
+        }
+
+        .review1,
+        .review2,
+        .review3 {
+            /* border: 1px solid green; */
+            flex-grow: 1;
+            border-radius: 25px 25px 25px 25px; 
+            /* margin-bottom: 13px; */
+        }
+
+        .personimage1 {
+            border-radius: 50%;
+            height: 100px;
+            width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ab {
+            display: flex;
+        }
+
+        .attherate {
+            color: gray;
+        }
+
+        /* .onsite{
+            padding-left: 1.5rem;
+        } */
+        .ab,
+        .ac,
+        .ad {
+            padding: 0.5rem;
+        }
+
+        .ad {
+            color: gray;
+        }
+
+        .ad {
+            position: relative;
+            bottom: -150px;
+        }
+
+        .foot {
+            display: flex;
+            background-color: aliceblue;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ppp1 {
+            font-size: 2rem;
+            font-weight: 800;
+
+        }
+
+        .ppp2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.2rem;
+        }
+
+        .commonfootcon {
+            font-weight: 600;
+            width: 80vw;
+            padding: 40px 50px;
+            box-shadow: 4px 8px 12px gray;
+            /* gap: 1.4rem; */
+            background-color: white;
+            border-radius: 18px;
+        }
+
+        .last {
+            display: flex;
+            flex-direction: row;
+            /* width: 90vw; */
+            margin-left: 3rem;
+            margin-right: 0rem;
+            justify-content: space-between;
+        }
+
+        .headbl {
+            font-size: 3rem;
+            font-weight: 600;
+            color: darkblue;
+        }
+        .footer{
+            height: 30vh;
+            /* width: 100vw; */
+            background-color: rebeccapurple;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer{
+            color: white;
+        }
+        .footer a{
+            text-transform: lowercase;
+        }
+        .para69{
+            text-transform: none;
+        }
+        .rate{
+            margin: 1rem;
+        }
+        .platimags{
+            width: auto;
+            
+        }
+        .fromsite{
+            gap: 0.5rem; display: flex; flex-direction: column;
+        }
+        .eb{
+            border: 1px solid gray;
+        }
+        .footer img{
+            height: 80px;
+        }
+        .footer a{
+            background-color: aliceblue;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="outside">
+        <div class="nav">
+            <a href="javascript:location.reload()">
+                <div class="logo">
+                <img src="so/image.png" alt="alternet text">
+            </div>
+            </a>
+            <div class="city">
+                <div>
+                    <div><label for="city">SELECT CITY</label></div>
+                </div>
+                <div>
+                    <select name="city" id="city">
+                        <option value="nagpur">Nagpur</option>
+                        <option value="pune">Pune</option>
+                        <option value="beed">Beed</option>
+                        <option value="amravati">Amravti</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="ch_sambhajinagar">Ch. Sambhajinagar</option>
+                        <option value="jalna">Jalna</option>
+                    </select>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="p1">
+                <div class="head1">
+                    Sell your car <br>in minutes
+                </div>
+                <div class="head2">
+                    Get doorstep pick up
+                    <br> and instant payment
+                </div>
+
+            </div>
+            <!-- <div class="p2"></div> -->
+            <div class="p3">
+                <div class="card">
+                    <div class="car_no">
+                        enter your car number
+                    </div>
+                    <div class="input_no">
+                        <input type="text" maxlength="10" placeholder="DL 01 AB12XX">
+                    </div>
+                    <button class="price">
+                        get car price
+                    </button>
+                    <div class="or">
+                        <div>or</div>
+                        <div style="border: 1px solid red;"></div>
+                    </div>
+                    <div class="par">
+                        start with your car brand
+                    </div>
+                    <div>
+                        <!-- car brands: maruti, mahindra, honda, ford, hyundai, tata, toyota, duster, view -->
+                        <div class="g1">
+                            <div class="brand_logor1 logo1"> <img src="so/ford.jpeg" alt="alternate text"
+                                    class="car_brand_logo"></div>
+                            <div class="brand_logor1 logo2"> <img src="so/honda.png" alt="alternate text"
+                                    class="car_brand_logo"></div>
+                            <div class="brand_logor1 logo3"> <img src="so/hyundai.png" alt="alternate text"
+                                    class="car_brand_logo"></div>
+                            <div class="brand_logor1 logo4"> <img src="so/mahindra.png" alt="alternate text"
+                                    class="car_brand_logo"></div>
+
+                        </div>
+                        <div class="g2">
+                            <div class="brand_logor2 logo5"> <img src="so/ms.png" alt="alternate text"
+                                    class="car_brand_logo"></div>
+                            <div class="brand_logor2 logo6"> <img src="so/nissan.png" alt="alternate text"
+                                    class="car_brand_logo"></div>
+                            <div class="brand_logor2 logo7"> <img src="so/skoda.png" alt="alternate text"
+                                    class="car_brand_logo"></div>
+                            <div class="brand_logor2 logo8"> <img src="so/tata.jpeg" alt="alternate text"
+                                    class="car_brand_logo"></div>
+                        </div>
+
+                    </div>
+                    <div style="display: flex;align-items: center;">
+                        <div>
+                            <a href="facebook.com" class="aa">view more car brands </a>
+                        </div>
+                        <div>
+                            <img src="so/arrow.png" alt="arrow" class="ar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tag">
+            <a href="instagram.com"> &nbsp;?&nbsp;&nbsp; </a>
+        </div> <br><br>
+
+        <div class="main2">
+            <div class="head">
+                Process of selling used car
+            </div>
+            <br>
+            <div class="photos_details">
+                <div class="part1">
+                    <img class="image1 images" src="so/photo1.jpg" alt="loading_photos">
+                    <div class="num">01</div>
+                    <div class="heading">Get price onine</div>
+                    <div class="descr para69">Answer some question about your car to help us understand its condition.</div>
+                </div>
+                <div class="part2">
+                    <img src="so/photo2.jpg" alt="loading_photos" class="image2 images">
+                    <div class="num">02</div>
+                    <div class="heading">car inspection</div>
+                    <div class="descr para69">Our car expert will physically verify your car's condition and give you the final
+                        offer</div>
+                </div>
+                <div class="part3">
+                    <img src="so/photo3.webp" alt="loading_photos" class="image3 images">
+                    <div class="num">03</div>
+                    <div class="heading">car pick up & payment</div>
+                    <div class="descr para69">we will transfer the amount directly to your bank account before your car is
+                        picked up.
+
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div> <br><br>
+
+        <div class="main2">
+            <div class="head">
+                Why sell car to CARS24?
+            </div> <br>
+            <div class="photos_details">
+                <div class="tickit1 ctickit">
+                    <img src="so/tic1.svg" alt="loading_tickit">
+                    <br><br>
+                    <div class="head2">great</div>
+                    <div class="head2">price</div>
+                    <br>
+                    <p>Largest dealer network + smart AI pricing engine = great deal for your car</p>
+                </div>
+                <div class="tickit2 ctickit">
+                    <img src="so/tic2.svg" alt="loading_tickit">
+                    <br><br>
+                    <div class="head2">instant</div>
+                    <div class="head2">payment</div>
+                    <br>
+                    <p>The amount is transferred directly to your bank account within minutes</p>
+                </div>
+                <div class="tickit3 ctickit">
+                    <img src="so/tic3.svg" alt="loading_tickit">
+                    <br><br>
+                    <div class="head2">hassle-free</div>
+                    <div class="head2">documentation</div>
+                    <br>
+                    <p>documentation and RC transfers can take months! We'll handle it all</p>
+                </div>
+                <div class="tickit4 ctickit">
+                    <img src="so/tic4.svg" alt="loading_tickit">
+                    <br><br>
+                    <div class="head2">sell from</div>
+                    <div class="head2">anywhere</div>
+                    <br>
+                    <p>from inspection to payment, everything right from your doorstep!</p>
+                </div>
+
+            </div>
+
+        </div> <br><br>
+
+        <div class="main2">
+            <div class="head">
+                10 Lakh+ happy customers
+            </div>
+            <br>
+            <div class="photos_details">
+                <div class="part1">
+                    <img class="image1 images" src="so/tm1.webp" style="border-radius: 20px 20px 0px 0px;"
+                        alt="loading_photos">
+                    <br>
+                    <div class="heading">Professional and courteous staff</div>
+                    <br>
+                    <div class="descr para69">The staff at CARS24 were incredibly polite and professional throughout the enture
+                        process. I got a fair price, and the whole...</div>
+                    <br>
+                    <div class="re1">
+                        <b>shivraj chauhan</b> <br>
+                        <i>sold maruti brezza, indore</i>
+                    </div>
+                </div>
+                <div class="part2">
+                    <img src="so/tm2.webp" alt="loading_photos" style="border-radius: 20px 20px 0px 0px;"
+                        class="image2 images">
+                    <br>
+                    <div class="heading">hassle-free process & instant payment</div>
+                    <br>
+                    <div class="descr para69">Selling my car on CARS24 was the easiest experience I've ever had. The entire
+                        process was smooth and...</div>
+                    <br><br>
+                    <div class="re2">
+                        <b>dhiraj patel</b><br>
+                        <i>sold maruti ertiga, surat</i>
+                    </div>
+                </div>
+                <div class="part3">
+                    <img src="so/tm3.webp" alt="loading_photos" style="border-radius: 20px 20px 0px 0px;"
+                        class="image3 images">
+                    <br>
+                    <div class="heading">Best Price Guarantee</div>
+                    <br><br>
+                    <div class="descr para69">I was initially hesitant about selling my car online, but CARS24 offered me the
+                        best price compared to local dealers.</div>
+                    <br><br>
+                    <div class="re3">
+                        <b>viram khanna</b> <br>
+                        <i>sold tata zest, pune</i>
+                    </div>
+                </div>
+            </div>
+        </div> <br><br>
+
+        <div class="main2">
+            <div class="head">
+                what motivates us
+            </div>
+            <br>
+            <div class="rate">
+                <div class="fromsite">
+                    <div class="div1">4.5+</div>
+                    <!-- <br> -->
+                    <div class="div2">average</div>
+                    <div class="div3">online rating</div>
+                    <!-- <br> -->
+                    <div class="platimags platimgs1 eb">
+                        <img class="platimags platimgs1" src="so/platform1.png" alt="alternate-text">
+                    </div>
+                    <div class="eb platimags platimgs2">
+                        <img class="platimags platimgs1" src="so/platform2.png" alt="alternate-text">
+                    </div>
+                    <div class="eb platimags platimgs3">
+                        <img class="platimags platimgs1" src="so/platform3.png" alt="alternate-text">
+                    </div>
+                </div>
+                <div class="onsite">
+                    <div class="review1 review">
+                        <div class="ab">
+                            <img src="so/person.jpeg" alt="alternate text" class="personimage1">
+                            <div class="names">
+                                <div class="bolded">ritesh l itankar</div>
+                                <br>
+                                <div class="attherate para69">@riteshitakar</div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="ac para69">
+                            Great expereince to deal with CARS24, you should also try it once in a life
+                        </div>
+                        <div class="ad">
+                            26th March, 2021
+                        </div>
+                    </div>
+                    <div class="review2 review">
+                        <div class="ab">
+                            <img src="so/person.jpeg" alt="alternate text" class="personimage1">
+                            <div class="names">
+                                <div class="bolded">barak obama</div>
+                                <br>
+                                <div class="attherate para69">@barakobama</div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="ac para69">
+                            Great expereince to deal with CARS24, you should also try it once in a life
+                        </div>
+                        <div class="ad">
+                            26th March, 2021
+                        </div>
+                    </div>
+                    <div class="review3 review">
+                        <div class="ab">
+                            <img src="so/person.jpeg" alt="alternate text" class="personimage1">
+                            <div class="names">
+                                <div class="bolded">donald j trump</div>
+                                <br>
+                                <div class="attherate para69">@djtrump</div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="ac para69">
+                            Great expereince to deal with CARS24, you should also try it once in a life
+                        </div>
+                        <div class="ad">
+                            26th March, 2021
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="foot"><br><br>
+            <div class="ppp1">Frequently asked questions</div> <br>
+            <div class="ppp2">
+                <div class="footcont1 commonfootcon"  style="display: flex; justify-content: space-between; align-items: center;" >
+                    <div>
+                        why is CARS24 the best place to sell my car online?
+                    </div>
+                    <img src="so/down-arrow.png" height="30px">
+                </div>
+                <div class="footcont2 commonfootcon" style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        can i sell a car that has an ongoing loan on it?
+                    </div>
+                    <img src="so/down-arrow.png" height="30px">
+                </div>
+                <div class="footcont3 commonfootcon" style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        is the car owner required to be present at the time of car pick up & inspection?
+                    </div>
+                    <img src="so/down-arrow.png" height="30px">
+                </div>
+                <div class="footcont4 commonfootcon" style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        do I need to be present at the RTO for RC transfer?
+                    </div>
+                    <img src="so/down-arrow.png" height="30px">
+                </div>
+                <div class="footcont5 commonfootcon" style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        how long does the RC transfer takes?
+                    </div>
+                    <img src="so/down-arrow.png" height="30px">
+                </div>
+                <div style="display: flex; align-self: flex-start;">
+                    <div>
+                        <a href="facebook.com" class="aa">view all FAQs </a>
+                    </div>
+                    <div>
+                        <img src="so/arrow.png" alt="arrow" class="ar">
+                    </div>
+                </div>
+            </div>
+        </div> <br><br>
+
+        <div class="last">
+            <div class="left">
+                <div class="headbl">the simplest</div>
+                <div class="headbl">way to sell!</div>
+                <br><br>
+                <button class="price" style="width: 315px;">
+                    get car prices
+                </button>
+            </div>
+            <div class="right">
+                <div class="carphoto">
+                    <img src="so/bgcar2.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="logo" >
+                <img src="so/image.png" alt="alternet text">
+            </div> <br>
+            <div class="foot-a">
+                @2019 <a href="https://www.cars24.com" style="text-decoration: none;">www.cars24.com</a> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;all rights reserved
+            </div> <br> 
+            <div class="foot-b">
+                <p>about us | 24x7 support | privacy policy | terms & conditions</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1> DONE >>> Ritankar </h1>
+    </div>
+</body>
+
+</html>

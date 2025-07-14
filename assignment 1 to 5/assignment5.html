@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT - 5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .par-1 {
+            height: 600px;
+            width: 500px;
+            border: 1px solid black;
+
+            /* background-color: yellow;
+            background-image: url("source/gandhiji.webp");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: contain; */
+
+            /* background: yellow url("source/gandhiji.webp") no-repeat fixed center / contain; */
+
+            background: linear-gradient(rgba(255, 0, 0, 0.4), rgba(255, 255, 255, 0.4), rgba(0, 255, 0, 0.4)), url("source/gandhiji.webp") no-repeat scroll center / contain;
+        }
+
+        .chi-1 {
+            height: 250px;
+            width: 250px;
+
+            margin: 20px 40px 60px;
+            padding: 20px 40px;
+            border: 10px double red;
+            
+            /* 
+            border-width: 20px;
+            border-style: dotted;
+            border-color: blue; 
+            */
+
+
+
+        }
+
+        
+
+
+
+        .grad1{
+            height: 500px;
+            width: 600px;
+            border: 1px solid black;
+
+            /* background-image: linear-gradient(red,yellow); */
+            
+            /* background-image: linear-gradient(to top, red,yellow); */
+
+            /* background-image: linear-gradient(red 50%,yellow 50%); */
+
+            background-image: linear-gradient(45deg, red 50%,yellow 50%);
+
+            /* background-image: linear-gradient(red 25%,yellow 50%, black 75%, green 100%);    ?  */
+
+            /* background-image: repeating-linear-gradient(red 10%,yellow 20%);  */
+        }
+
+        .grad2{
+            width: 600px;
+            height: 500px;
+            border: 1px solid black;
+            
+            /* background-image: radial-gradient(red,green,yellow); */
+
+            /* background-image: radial-gradient(red 5%,green 25%,yellow 60%); */
+
+            /* background-image: radial-gradient(circle,red,green,yellow); */
+
+            background-image: repeating-radial-gradient(ellipse,black 10%, white 13%);
+            border-radius: 50%;
+        }
+        .grad3{
+            height: 500px;
+            width: 600px;
+            
+            border: 1px solid black;
+            
+            /* background-image: conic-gradient(red, yellow , green , blue, violet, pink, brown); */
+
+           /* background-image: conic-gradient(red 90deg, yellow , green , blue, violet, pink, brown); */
+           
+           /* background-image: conic-gradient(red 0deg, red 45deg, yellow 45deg, yellow 90deg, green 90deg, green 180deg, blue 180deg, blue 270deg, white 270deg, white 360deg); */
+
+           background-image: repeating-conic-gradient(red 10%, green 20%);
+
+           border-radius: 50%;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>Background shorthand & different shades of gradient</h2> <hr>
+    <div class="par-1">
+
+    </div>
+    <div class="par-2">
+        <div class="chi-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur quisquam quod necessitatibus porro veritatis culpa facilis dolorem sunt laboriosam suscipit!
+        </div>
+    </div>
+
+    <div>
+        <h1>DIFFERNET SHADES OF GRADIENT</h1>
+        <div class="grad1"> gradient 1</div>
+        <div class="grad2"> gradient 2</div>
+        <div class="grad3"> gradient 3</div>
+
+    </div>
+<hr>
+    <h1>DONE >>> RITANKAR</h1>
+
+
+</body>
+
+</html>

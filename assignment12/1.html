@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>सूर्य देवता</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: 3rem auto;
+            border: 1px solid red;
+            height: 600px;
+            width: 600px;
+            position: relative;
+            background-image: url("sun.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .items {
+            height: 400px;
+            width: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .item1 {
+            border: 2px solid orangered;
+            z-index: 3;
+            border-radius: 100%;
+            background-color: orange;
+            
+        }
+
+        .item2 {
+            border: 2px solid orangered;
+            z-index: 2;
+            background-color: orange;
+
+        }
+
+        .item3 {
+            background-color: orange;
+            border: 2px solid orangered;
+            z-index: 1;
+            transform: rotate(45deg) translateX(-71%) translateY(0%);
+
+        }
+
+        img {
+
+            /* transform: rotate(135deg); */
+
+            z-index: 4;
+            border-radius: 100%;
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            /* display: none; */
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>सूर्य देवता</h1>
+    <div class="container">
+        <div class="items item1">
+            <img src="./lord sun.webp" alt="suryadev" class="sd">
+        </div>
+        <div class="items item2"></div>
+        <div class="items item3">
+        </div>
+    </div>
+    <div>
+        <h1>DONE>>>RITANKAR</h1>
+    </div>
+</body>
+
+</html>

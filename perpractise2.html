@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: #968181 url("/wagh.jpg") no-repeat fixed center top;
+            /* background-attachment: ; */
+        }
+        /* tagname { 
+            background: background-color, background-image, background-repeat, background-attachment, background-position
+        } */
+        /* CSS VAIABLE  */
+        :root{
+            --bgcol : yellow;
+            --txtcol: red;
+            --div_width : 40%;
+            --div-height : 300px;
+            --boxcol : green;
+            --text-ali : center;
+        }
+        div{
+            height: var(--div-height);
+            width: var(--div_width);
+            background-color: var(--boxcol);
+        
+        }
+        h1{
+            text-align: var(--text-ali);
+            color: var(--txtcol);
+            background-color: var(--bgcol);
+        }
+        .newdiv{
+            background-image: url("source/gandhiji.webp");
+            background-color: yellow;
+            height: 100vh;
+            width: 100vw;
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            /* background-image: linear-gradient(red,white,green); */
+
+        }
+    </style>
+    
+
+</head>
+
+<body>
+    <div>
+        <h1>THIS IS THE HEADING OF THE PAGE</h1>
+    </div>
+    <div>
+        <h1>THIS IS THE HEADING OF THE PAGE</h1>
+    </div>
+    <div>
+        <h1>THIS IS THE HEADING OF THE PAGE</h1>
+    </div>
+    <div>
+        <h1>THIS IS THE HEADING OF THE PAGE</h1>
+    </div>
+
+    <div class="newdiv">
+        <h1>THIS IS ANOTHER BOX</h1>
+        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem debitis provident incidunt necessitatibus nesciunt accusamus quae tempore est placeat, perspiciatis fugit quis quas deleniti voluptatibus ipsa animi blanditiis architecto sint quam! Officia laboriosam nemo beatae excepturi blanditiis expedita odit sequi hic dolor labore illo adipisci eius tempora culpa omnis, voluptatibus sint! Quis voluptatum laboriosam ad.</P>
+
+    </div>
+</body>
+
+</html>

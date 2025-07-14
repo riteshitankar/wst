@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-1</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+        }
+        .box1{
+            background-color:rgb(104, 209, 169);
+            align-content: flex-end;
+            
+        }
+        .main-box{
+            height: 300px;
+            width: 600px;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 1rem;
+
+            padding: 1rem;
+            background-color: gray;
+            
+        }
+        .boxes{
+            flex-grow: 1;
+            height: 250px;
+            width: 250px;
+            /* border: 1px solid black; */
+            
+        }
+        .box2{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            
+        }
+        .boxes2{
+            
+            flex-grow: 1;
+            /* border: 1px solid black;             */
+        }
+        .box2row2{
+            display: flex;
+            gap: 1rem;
+            justify-content: space-evenly;
+        }
+       
+        .row2{
+            flex-grow: 1;
+            /* border: 1px solid black; */
+        }
+
+        .colgre{
+            background-color: rgb(104, 209, 169);
+        }
+
+        /* flex: <flex-grow> <flex-shrink> <flex-basis>; */
+
+        /* flex-flow:  <flex-wrap> <direction> */
+
+
+        
+        
+
+
+
+    </style>
+</head>
+<body>
+    <h1>
+        flex : align-items valu(flex-start/end) | flex child shorthand properties | 5 flex layout
+    </h1>
+    <div class="main-box">
+        <div class="box1 boxes">Flexbox</div>
+        <div class="box2 boxes">
+            <div class="boxes2 box2row1 colgre"></div>
+            <div class="boxes2 box2row2">
+                <div class="row2 row2col1 colgre"></div>
+                <div class="row2 row2col2 colgre"></div>
+            </div>
+            <div class="boxes2 box2row3 colgre"></div>
+        </div>
+    </div>
+    <h1>
+        DONE >>> RITANKAR
+    </h1>
+    
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 2</title>
+    <style>
+        *{
+            margin: 0; 
+            padding: 0;
+        }
+        .container{
+            width: 800px; height: 800px; margin-top: 100px; margin-left: 100px; font-size: 40px; background-color: yellow;
+            /* position: relative; */
+        }
+        .box1{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            /* position: static; */
+
+            /* position: sticky; */
+            top: 0px;
+            right: 0px;
+            
+        }
+        .box2{
+            height: 200px;
+            width: 200px;
+            background-color: tomato;
+            
+
+
+            /* STATIC */
+            /* position: static; */
+            /* top: 30px; left: 40px; */
+            /* top: -30px; left: -40px; */
+
+            /* याची default पोजिशन static राहते, येच मंदी, टॉप, लेफ्ट, राइट, बॉटम आणि तेच प्लस, मायनस न काही फरक पडत नाही;  हा आपली जागा नाही सोडत कोणत्याच परिस्थितीत, ऊन येओ का वारा , #लावा_ताकत */
+
+
+
+            /* RELATIVE */
+            /* position: relative ;  */
+            /* right: -50px; */
+            /* top: 30px; rightft: 40px; */
+            /* bottom: -30px; left: -40px; */
+           
+            /* relative: it moves inside the parent 
+            div based on the top, right, left, bottom आणि येथे पॉजिटिव आणि नेगेटिव च्या पण मान राखला जातेन शेट, जसी हवा आली तसा वायतो हा, area नाही सोडत पण element हा हलवला जाते.
+            याचा रेफ्रेन्स पॉइंट याच एलिमेंट च्या टॉप लेफ्ट कोर्नर असते   
+            */
+
+
+
+            /* ABSOLUTE */
+            /* position: absolute; */
+            /* right: -15px; */
+            /* right: 0px; bottom: 0px; */
+            /* left: 50%; */ 
+            /* top: 50%; */
+
+            /* absolute: हा दानविर स्वता:ची जागा सोडून देते आणि जो एलिमेंट तेची जागा घेते तेच उरावर जाऊन बसते. 
+            याचा रेफ्रेन्स पॉइंट html बॉडी असते, जेव्हा टॉप, लेफ्ट, राइट, बॉटम दिल जाते. हा सुद्धा relative प्रमाणे प्लस मायनस ची इज्जत करते.*/
+            /*when parent is a relative and a child is an absolute, then child moves with reference to its parent not a body*/
+
+
+            /* FIXED */
+            /* position: fixed; */
+
+            /* top: 30px; left: 40px; */
+            /* top: -30px; left: -40px; */
+
+            /*  */
+
+        }
+        .box3{
+            height: 300px;
+            width: 300px;
+            background-color: coral;
+            /* position: static; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="boxes box1">1</div>
+        <div class="boxes box2">2</div>
+        <div class="boxes box3">3</div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas maxime sit voluptatem enim sed quaerat numquam debitis consequatur eos, placeat facilis nostrum. Voluptatem odit nemo repellendus officiis optio tempore commodi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam voluptates soluta quibusdam aperiam adipisci minus maiores earum expedita cumque dolore repellat saepe quam, amet ipsa veritatis reprehenderit nesciunt provident!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos accusantium dolorum earum cumque voluptates magni fugiat asperiores iste adipisci tempore alias voluptas praesentium, doloribus architecto repellendus quae id aliquam maxime!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas maxime sit voluptatem enim sed quaerat numquam debitis consequatur eos, placeat facilis nostrum. Voluptatem odit nemo repellendus officiis optio tempore commodi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam voluptates soluta quibusdam aperiam adipisci minus maiores earum expedita cumque dolore repellat saepe quam, amet ipsa veritatis reprehenderit nesciunt provident!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos accusantium dolorum earum cumque voluptates magni fugiat asperiores iste adipisci tempore alias voluptas praesentium, doloribus architecto repellendus quae id aliquam maxime!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas maxime sit voluptatem enim sed quaerat numquam debitis consequatur eos, placeat facilis nostrum. Voluptatem odit nemo repellendus officiis optio tempore commodi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam voluptates soluta quibusdam aperiam adipisci minus maiores earum expedita cumque dolore repellat saepe quam, amet ipsa veritatis reprehenderit nesciunt provident!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos accusantium dolorum earum cumque voluptates magni fugiat asperiores iste adipisci tempore alias voluptas praesentium, doloribus architecto repellendus quae id aliquam maxime!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas maxime sit voluptatem enim sed quaerat numquam debitis consequatur eos, placeat facilis nostrum. Voluptatem odit nemo repellendus officiis optio tempore commodi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam voluptates soluta quibusdam aperiam adipisci minus maiores earum expedita cumque dolore repellat saepe quam, amet ipsa veritatis reprehenderit nesciunt provident!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos accusantium dolorum earum cumque voluptates magni fugiat asperiores iste adipisci tempore alias voluptas praesentium, doloribus architecto repellendus quae id aliquam maxime!</p>
+    <div>
+        <h1> DONE >>> Ritankar </h1>
+    </div>
+</body>
+</html>
+
+<!-- static : by default -->

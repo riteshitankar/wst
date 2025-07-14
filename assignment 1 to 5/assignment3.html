@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT - 3</title>
+</head>
+
+<body>
+    <h2>CREATE A 5 HTML FORMS</h2>
+    <hr>
+    <h1>FORM-1</h1>
+    <form action="/backend_address.php" method="post">
+        <table>
+            <tr style="height: 35px;">
+                <td>
+                    <label for="fname">FIRST NAME</label>
+                </td>
+                <td>
+                    :
+                </td>
+                <td>
+                    <input type="text" placeholder="ENTER YOUR FIRST NAME" id="fname">
+                </td>
+            </tr>
+            <tr style="height: 35px;">
+                <td>
+                    <label for="mname">MIDDLE NAME</label>
+                </td>
+                <td>
+                    :
+                </td>
+                <td>
+                    <input type="text" placeholder="ENTER YOUR MIDDLE NAME" id="mname">
+                </td>
+            </tr>
+            <tr style="height: 35px;">
+                <td>
+                    <label for="gfname">GRAND FATHER NAME</label>
+                </td>
+                <td>
+                    :
+                </td>
+                <td>
+                    <input type="text" placeholder="ENTER YOUR GRAND FATHER NAME" id="gfname">
+                </td>
+            </tr>
+            <tr style="height: 35px;">
+                <td>
+                    <label for="sname">SIR NAME</label>
+                </td>
+                <td>
+                    :
+                </td>
+                <td>
+                    <input type="text" placeholder="ENTER YOUR FIRST NAME" id="sname">
+                </td>
+            </tr>
+            <tr style="height: 35px;">
+                <td>
+                    <label for="em">EMAIL ADDRESS</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="email" id="em" placeholder="ENTER YOUR EMAIL ADDRESS">
+                </td>
+            </tr>
+            <tr style="height: 35px;">
+                <td>
+                    <label for="phn">PHONE NUMBER</label>
+                </td>
+                <td>
+                    :
+                </td>
+                <td>
+                    <select name="phonenum" id="phon">
+                        <option value="">+91</option>
+                        <option value="">+955</option>
+                        <option value="">+69</option>
+                    </select>
+
+                    <input type="number" id="phn" placeholder="ENTER YOUR PHONE NUMBER">
+                </td>
+            </tr>
+            <tr style="height: 35px;">
+                <td>
+                    <label for="gen">GENDER</label>
+                </td>
+                <td>
+                    :
+                </td>
+                <td>
+                    <input type="radio" name="gene" id="gen1">
+                    <label for="gen1">MALE</label><br>
+
+                    <input type="radio" name="gene" id="gen2">
+                    <label for="gen2">FEMALE</label><br>
+
+                    <input type="radio" name="gene" id="gen3">
+                    <label for="gen3">RATHER NOT SAY</label> <br>
+                </td>
+            </tr>
+            <tr style="height: 35px;">
+                <td>
+                    <label for="city">City</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <select name="" id="city">
+                        <optgroup label="MH">
+                            <option value="">PUNE</option>
+                            <option value="">MUMBAI</option>
+                            <option value="">AKOLA</option>
+                            <option value="">WARDHA</option>
+                            <option value="">RATNAGIRI</option>
+                            <option value="">JALNA</option>
+                            <option value="">AMRAVATI</option>
+                            <option value="" selected>NAGPUR</option>
+                        </optgroup>
+                        <optgroup label="MP">
+                            <option value="">INDORE</option>
+                            <option value="">Ujjain</option>
+                        </optgroup>
+                        <optgroup label="GJ">
+                            <option value="">AHAMDABAD</option>
+                            <option value="">SURAT</option>
+                        </optgroup>
+                </td>
+            </tr>
+            <tr style="height: 35px;">
+                <td>
+                    <button type="submit">SUBMIT THE DATA</button>
+                </td>
+                <td>
+                </td>
+                <td>
+                    <button type="reset">RESET THE BUTTON</button>
+                    <button type="button">CUSTOMIZABLE BUTTON</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <hr>
+    <h1>FORM-2</h1>
+    <form action="LINK" method="get/post/dialog">
+        <fieldset>
+            <legend>YOUR ADDRESS</legend>
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td>
+                        <input type="text" name="" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>
+                        <input type="text" name="" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Street</td>
+                    <td>
+                        <input type="text" name="" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td>
+                        <input type="text" name="" id="">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>ADDITIONAL DETAILS</legend>
+            <table>
+                <tr>
+                    <td>Biography</td>
+                    <td>
+                        <textarea name="" id="" cols="40" rows="4"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Image</td>
+                    <td>
+                        <input type="file" name="" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Age Group</td>
+                    <td>
+                        <select name="" id="">
+                            <option value="">0 to 9 Years</option>
+                            <option value="">10 to 12 Years</option>
+                            <option value="">13 to 19 Years</option>
+                            <option value="">20 to 30 Years</option>
+                            <option value="">31 to 50 Years</option>
+                            <option value="">51+ Years</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>INTERESTS</legend>
+            <table>
+                <tr>
+                    <td>Hobbies</td>
+                    <td>
+                        <select name="" id="" size="4">
+                            <option value="">Playig Socer</option>
+                            <option value="">Dancing</option>
+                            <option value="">Gardening</option>
+                            <option value="">Watching movies</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Favourite car?</td>
+                    <td>
+                        <select name="" id="">
+                            <option value="">Volvo</option>
+                            <option value="">Audi</option>
+                            <option value="">VW</option>
+                            <option value="">Skoda</option>
+                            <option value="">Toyota</option>
+                            <option value="">Mitshubishi</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Favourite Public Transport ? </td>
+                    <td>
+                        <select name="" id="" size="4">
+                            <optgroup label="Ground">
+                                <option name="" id="">Train</option>
+                                <option name="" id="">Bus</option>
+                            </optgroup>
+                            <optgroup label="Water">
+                                <option name="" id="">SHEEP</option>
+                                <option name="" id="">BOAT</option>
+                            </optgroup>
+
+
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+    <hr>
+    <h1>FORM-3</h1>
+    <form action="address.exe" method="post">
+        <ul>
+            <li>
+                <label for="n">Name: </label>
+                <input type="text" id="n">
+            </li>
+            <li>
+                <label for="e">Email: </label>
+                <input type="email" id="e">
+            </li>
+            <li>
+                <label for="p">Password: </label>
+                <input type="password" id="p">
+            </li>
+
+            <br>
+
+            <li> Please check all the emotions that apply to you:
+                <ul style="list-style-type: circle;"> <!--fomatting not applying-->
+                    <li>
+                        <label for="ang">Angry</label>
+                        <input type="checkbox" id="ang" checked>
+                    </li>
+                    <li>
+                        <label for="sa">Sad</label>
+                        <input type="checkbox" id="sa">
+                    </li>
+                    <li>
+                        <label for="ha">Happy</label>
+                        <input type="checkbox" id="ha">
+                    </li>
+                    <li>
+                        <label for="am">Ambivalent</label>
+                        <input type="checkbox" id="am">
+                    </li>
+                </ul>
+
+            </li>
+            <li> How satisfied were you with our service?
+                <ul>
+                    <li>
+                        <label for="vs">Very Satisfied</label>
+                        <input type="radio" name="rad" id="vs" checked>
+                    </li>
+                    <li>
+                        <label for="s">Satisfied</label>
+                        <input type="radio" name="rad" id="s">
+                    </li>
+                    <li>
+                        <label for="dc">Didn't care</label>
+                        <input type="radio" name="rad" id="dc">
+                    </li>
+                    <li>
+                        <label for="di">Dissatisfied</label>
+                        <input type="radio" name="rad" id="am">
+                    </li>
+                    <li>
+                        <label for="vd">Very dissatisfied</label>
+                        <input type="radio" name="rad" id="vd">
+                    </li>
+
+                </ul>
+
+            </li>
+            <li>
+                <label for="phol">Further Comments: </label>
+                <textarea id="phol" cols="40" rows="4"></textarea>
+            </li>
+            <li>
+                <label for="photo">
+                    Bio Photo:
+                </label>
+                <input type="file" id="photo">
+            </li>
+            <li>
+                <label for="lov">
+                    Location visited:
+                </label>
+                <select id="lov">
+                    <option value="">NAGPUR</option>
+                    <option value="">AMRAVATI</option>
+                    <option value="">MUMBAI</option>
+                </select>
+            </li>
+            <li>
+                <input type="submit" value="SUMIT">
+            </li>
+        </ul>
+    </form>
+    <hr>
+    <h1>FORM - 4</h1>
+    <form action="link" method="dialog/post/get">
+        <fieldset>
+            <legend>Pesonal Details</legend>
+            <table>
+                <tr>
+                    <td>Full Name : </td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Biography : </td>
+                    <td><textarea name="" id="" cols="40" rows="4"></textarea></td>
+                </tr>
+            </table>
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" name="gender-5" id="gf1">
+                <label for="gf1">Female</label>
+                <br>
+                <input type="radio" name="gender-5" id="gm4">
+                <label for="gm4">Male</label>
+                <br>
+                <input type="radio" name="gender-5" id="gnb4"><label for="gnb4">Non-binary</label>
+                <br>
+                <input type="radio" name="gender-5" id="gpns4"><label for="gpns4">I prefer not to say</label>
+                <br>
+            </fieldset>
+
+        </fieldset>
+        <input type="checkbox" name="" id="ch1">
+        <label for="ch1">I accept the terms and conditions</label>
+    </form>
+    <hr>
+    <h1>FORM - 5</h1>
+    <form action="link" method="dialog/get/post">
+        <table>
+            <tr>
+                <td>Fist Name:</td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    Last Name:
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td>
+                    <input type="date">
+                </td>
+                <td>
+                    Age
+                </td>
+                <td>
+                    <input type="number" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <select name="" id="">
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                        <option value="">Trans</option>
+                    </select>
+                </td>
+                <td>Email Address:</td>
+                <td>
+                    <input type="email" name="" id="">
+                </td>
+            </tr>
+        </table>
+        <br>
+        Position Avaliable :
+        <input type="radio" name="samename" id="r1">
+        <label for="r1">Junior Developer</label>
+        <input type="radio" name="samename" id="r2">
+        <label for="r2">Mid-level Developer</label>
+        <input type="radio" name="samename" id="r3">
+        <label for="r3">Senior Developer</label>
+        <br>
+        Programming Languages :
+        <input type="checkbox" id="c1">
+        <label for="c1">Java</label>
+        <input type="checkbox" id="c2">
+        <label for="c2">JavaScript</label>
+        <input type="checkbox" id="c3">
+        <label for="c3">Python</label>
+        <br>
+
+        <table>
+            <tr>
+                <td>
+                    <label for="pw">Password</label>
+
+                </td>
+                <td>
+                    <input type="password" id="pw">
+
+                </td>
+                <td> 
+                    <label for="cpw">Confirm Password</label>
+                </td>
+                <td>
+                    <input type="password" id="cpw">
+
+                </td>
+            </tr>
+            
+        </table>
+
+        <button type="submit">SUBMIT</button>
+        <button type="reset">RESET</button>
+        
+
+    </form>
+
+
+
+
+    <hr>
+    <h1>DONE >>> RITANKAR</h1>
+</body>
+
+
+</html>

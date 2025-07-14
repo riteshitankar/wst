@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>introcard 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Math&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-transform: capitalize;
+            font-size: 1.1rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .nav,
+        .left1,
+        .left2,
+        .left,
+        .right,
+        .logo,
+        .m1,
+        .m2,
+        .m3,
+        .m4,
+        .m5 {
+            display: flex;
+            height: 10vh;
+            align-items: center;
+        }
+
+        .left1,
+        .left2 {
+            margin: 0rem 0.8rem;
+            font-weight: 550;
+        }
+
+        img {
+            height: 8vh;
+            width: auto;
+            vertical-align: middle;
+
+        }
+
+        .dd {
+            height: 2vh;
+            padding: 0rem 0.2rem;
+        }
+
+        .nav {
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .right2,
+        .account {
+            display: flex;
+        }
+
+        .right>.right1 .dd {
+            height: 22px;
+        }
+
+        .aa {
+            display: flex;
+            background-color: yellow;
+            border: 1px solid red;
+            border-radius: 15px;
+            text-decoration: none;
+            height: fit-content;
+            align-items: center;
+            justify-content: center;
+            height: 45px;
+            width: 140px;
+
+        }
+
+        .right1,
+        .right2 {
+            padding-left: 15px;
+            padding-right: 15px;
+            /* border: 1px solid red; */
+        }
+
+        .right2 {
+            border-left: 1px solid black;
+        }
+
+        .nav>.left>.left2>.m1 {
+            color: orangered;
+
+        }
+
+        .right2 img {
+            height: 4vh;
+        }
+
+        .account {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav .right2 .line2 {
+            font-weight: 600;
+            /* color: red; */
+        }
+
+        .m1 {
+            font-weight: 800 !important;
+        }
+
+        .nav {
+            position: sticky;
+            top:0;
+            background-color: white;
+            z-index: 1;
+            /* width: 100vw;1 */
+        }
+
+        .main {
+            /* margin: 1px solid white; */
+            /* margin-top: 10vh; */
+            position: absolute;
+
+        }
+
+        .right2 a {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem;
+        }
+
+        .main {
+            background-image: url("./sources/poster.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100vw;
+            height: auto;
+
+        }
+
+        .left2 .dd {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .main .h2 {
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .main .c1 {
+            width: 80vw;
+            border: 1px solid white;
+            border-radius: 20px;
+            background-color: whitesmoke;
+        }
+
+        .h1,
+        .h2 {
+            color: white;
+        }
+
+        .c1 {
+            padding: 2rem 3rem;
+        }
+
+        .c1-left-h1 {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .head-c1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .c1-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .c1-right>.c1-left-h1 {
+            display: flex;
+        }
+
+        .c1-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .c1-right-h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem;
+            font-weight: 600;
+            font-size: 2rem;
+        }
+
+        .pc {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        input {
+            height: 35px;
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        .cities {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(3, 100px);
+            gap: 1rem;
+        }
+
+        .citys {
+            /* border: 1px dotted green; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .main {
+            margin-left: 0rem !important;
+            margin-right: 0rem !important;
+            padding-left: 0rem !important;
+            padding-right: 0rem !important;
+            border: none !important;
+            width: 100%;
+        }
+
+        .cityimage {
+            height: 72px;
+            width: 120px;
+            border-radius: 10px;
+        }
+
+        .cityname {
+            font-family: "Libertinus Math", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            text-transform: lowercase;
+            text-transform: capitalize;
+        }
+
+        .city24>.cityimage {
+            border: 2px solid orangered;
+            background-color: rgba(255, 166, 0, 0.24);
+            /* height: 500px; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: orangered;
+            font-weight: 700;
+        }
+
+        .city24 {
+            /* overflow: auto; */
+            height: 200px;
+            display: flex;
+            align-items: start;
+            justify-content: start;
+        }
+        .main2{
+            position: absolute;
+            /* margin-top: 125vh; */
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            height: 40vh;
+            padding: 2rem 12rem;
+            background-color: rgba(135, 207, 235, 0.39);
+            border-bottom: 3px solid rgb(0, 183, 255);
+
+        }
+        .outside{
+            position: relative;
+        }
+        .main2>.h11{
+            /* font-family: 'Times New Roman', Times, serif; */
+            font-family: monospace;
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+        .main2>.h22{
+            /* font-family: 'Times New Roman', Times, serif; */
+            font-family: monospace;
+            font-size: 1rem;
+            letter-spacing: 2px;
+        }
+        .main3{
+            /* margin: 3rem; */
+            margin-top: 170vh;
+            /* position: absolute; */
+            padding: 10vh;
+        }
+        .main3>h1{
+            font-size: 2rem;
+            font-weight: 600;
+            position: relative;
+            bottom: -20px;
+            z-index: 99;
+            width: fit-content;
+            background-color: white;
+            
+        }
+        .main3>.g {
+            padding-top:2rem;
+            border-top: 2px solid rgba(0, 183, 255, 0.678);
+
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(6,1fr);
+        }
+        .logos{
+            width: 150px;
+            height: auto;
+            padding: 1rem;
+            border: 1px solid gray;
+            border-radius: 25px;
+            box-shadow: 4px 8px 12px gray;
+        }
+        .nav>.left, .nav>.right{
+            cursor: pointer;
+        }
+
+        .main{
+            position: static;
+        }
+        .main2,.main3{
+            position: static;
+            margin: 2rem 0rem;
+
+        }
+        
+        
+
+    </style>
+</head>
+
+<body>
+    <!-- position: relative; -->
+    <div class="outside">
+        
+        <!-- position:fixed  -->
+        <div class="nav">
+            <div class="left">
+                <div class="left1">
+                    <div class="logo">
+                        <img src="sources/image.png" alt="alternet-text">
+                    </div>
+                </div>
+                <div class="left2">
+                    <div class="m1">
+                        <div>buy used car</div>
+                        <img src="sources/down-arrow.png" class="dd" alt="alternet-text">
+                    </div>
+                    <div class="m2">
+                        <div>sell car</div>
+                        <img src="sources/down-arrow.png" class="dd" alt="alternet-text">
+                    </div>
+                    <div class="m3">
+                        <div>car finance</div>
+                        <img src="sources/down-arrow.png" class="dd" alt="alternet-text">
+                    </div>
+                    <div class="m4">
+                        <div>new cars</div>
+                        <img src="sources/down-arrow.png" class="dd" alt="alternet-text">
+                    </div>
+                    <div class="m5">
+                        <div>car services</div>
+                        <img src="sources/down-arrow.png" class="dd" alt="alternet-text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="right1">
+                    <a href="tel:+918767960965" class="aa">
+                        <div>
+                            <img src="sources/telephone.png" class="dd" alt="alternet-text">
+                        </div>
+                        <div>call us</div>
+                    </a>
+                </div>
+
+                <div class="right2">
+                    <a href="">
+                        <img src="sources/heart.png" class="dd" alt="love">
+                    </a>
+                    <a href="">
+                        <img src="sources/profile-user.png" class="dd" alt="profile">
+                    </a>
+
+                    <div class="account">
+                        <div class="line1">Hello, Sign in</div>
+                        <div class="line2">Account <img src="sources/down-arrow.png" alt="arrow-down"> </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- position: absolute; -->
+        <!-- margin-top: 10vh; -->
+        <div class="main">
+            <br>
+            <div class="h1">CARS24 India</div> <br>
+            <div class="h2">Experience a whole new world of cars</div> <br> <br>
+            <div class="c1">
+                <div class="head-c1">
+                    <div class="c1-left">
+                        <div class="c1-left-h1">select your city to view cars</div>
+                    </div>
+                    <div class="c1-right">
+                        <div class="c1-right-h1">
+                            <img src="sources/location.png" alt="locationmark" class="loc">
+                            <div class="location">use your location</div>
+                        </div>
+                        <div class="c1-right-h2">
+                            <input type="text" placeholder="search for your city" class="search">
+                        </div>
+                    </div>
+                </div>
+                <div class="pc">
+                    popular cities
+                </div>
+                <br>
+                <div class="cities">
+                    <div class="citys city1">
+                        <img src="./sources/nagpur.webp" class="cityimage" alt="cityimage">
+                        <div class="cityname">NAGPUR</div>
+                    </div>
+                    <div class="citys city2">
+                        <img src="./sources/nagpur.webp" class="cityimage" alt="cityimage">
+                        <div class="cityname">NAGPUR</div>
+                    </div>
+                    <div class="citys city3">
+                        <img src="./sources/nagpur.webp" class="cityimage" alt="cityimage">
+                        <div class="cityname">NAGPUR</div>
+                    </div>
+                    <div class="citys city4">
+                        <img src="./sources/nagpur.webp" class="cityimage" alt="cityimage">
+                        <div class="cityname">NAGPUR</div>
+                    </div>
+                    <div class="citys city5">
+                        <img src="./sources/beed.webp" class="cityimage" alt="cityimage">
+                        <div class="cityname">BEED</div>
+                    </div>
+                    <div class="citys city6">
+                        <img src="./sources/beed.webp" class="cityimage" alt="cityimage">
+                        <div class="cityname">BEED</div>
+                    </div>
+                    <div class="citys city7">
+                        <img src="./sources/beed.webp" class="cityimage" alt="cityimage">
+                        <div class="cityname">BEED</div>
+                    </div>
+                    <div class="citys city8">
+                        <img src="./sources/beed.webp" class="cityimage" alt="cityimage">
+                        <div class="cityname">BEED</div>
+                    </div>
+                    <div class="citys city9">
+                        <img src="./sources/mumbai.webp" class="cityimage" alt="cityimage">
+                        <div class="cityname">MUMBAI</div>
+                    </div>
+                    <div class="citys city10">
+                        <img src="./sources/mumbai.webp" class="cityimage" alt="cityimage">
+                        <div class="cityname">MUMBAI</div>
+                    </div>
+                    <div class="citys city11">
+                        <img src="./sources/mumbai.webp" class="cityimage" alt="cityimage">
+                        <div class="cityname">MUMBAI</div>
+                    </div>
+                    <div class="citys city12">
+                        <img src="./sources/mumbai.webp" class="cityimage" alt="cityimage">
+                        <div class="cityname">MUMBAI</div>
+                    </div>
+                    <div class="citys city13">
+                        <img src="./sources/solapur.webp" class="cityimage" alt="cityimage">
+                        <div class="cityname">SOLAPUR</div>
+                    </div>
+                    <div class="citys city14">
+                        <img src="./sources/solapur.webp" class="cityimage" alt="cityimage">
+                        <div class="cityname">SOLAPUR</div>
+                    </div>
+                    <div class="citys city15">
+                        <img src="./sources/solapur.webp" class="cityimage" alt="cityimage">
+                        <div class="cityname">SOLAPUR</div>
+                    </div>
+                    <div class="citys city16">
+                        <img src="./sources/solapur.webp" class="cityimage" alt="cityimage">
+                        <div class="cityname">SOLAPUR</div>
+                    </div>
+                    <div class="citys city17">
+                        <img src="./sources/solapur.webp" class="cityimage" alt="cityimage">
+                        <div class="cityname">SOLAPUR</div>
+                    </div>
+
+                    <div class="citys city18">
+                        <img src="./sources/kolkatta.webp" class="cityimage" alt="cityimage">
+                        <div class="cityname">KOLKATTA</div>
+                    </div>
+                    <div class="citys city19">
+                        <img src="./sources/kolkatta.webp" class="cityimage" alt="cityimage">
+                        <div class="cityname">KOLKATTA</div>
+                    </div>
+                    <div class="citys city20">
+                        <img src="./sources/kolkatta.webp" class="cityimage" alt="cityimage">
+                        <div class="cityname">KOLKATTA</div>
+                    </div>
+                    <div class="citys city21">
+                        <img src="./sources/kolkatta.webp" class="cityimage" alt="cityimage">
+                        <div class="cityname">KOLKATTA</div>
+                    </div>
+                    <div class="citys city22">
+                        <img src="./sources/kolkatta.webp" class="cityimage" alt="cityimage">
+                        <div class="cityname">KOLKATTA</div>
+                    </div>
+                    <div class="citys city23">
+                        <img src="./sources/kolkatta.webp" class="cityimage" alt="cityimage">
+                        <div class="cityname">KOLKATTA</div>
+                    </div>
+                    <div class="citys city24">
+                        <div class="cityimage" alt="cityimage">view all</div>
+                        <div class="cityname">view all cities</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- position: absolute; -->
+        <!-- margin-top: 125vh; -->
+        <div class="main2"> 
+            <div class="h11">
+                Buy certified used cars in india
+            </div>
+            <br>
+            <div class="h22">
+                Explore a huge inventory of high-quality, certified second-hand cars in India, from popular brands like
+                Maruti Suzuki, Hyundai, Honda, and more. Our extensive list of used cars in India includes models like
+                the
+                Swift, i10 Nios, City, Kwid, and many more.
+            </div>
+        </div>
+
+        <!-- position: absolute; -->
+        <!-- margin-top: 170vh; -->
+        <div class="main3">
+            <h1>popular brands &nbsp;</h1>
+            <!-- correct or not  -->
+            <div class="g">
+                <img src="./sources/skoda.png" alt="alternate" class="logos logo1">
+                <img src="./sources/skoda.png" alt="alternate" class="logos logo2">
+                <img src="./sources/skoda.png" alt="alternate" class="logos logo3">
+                <img src="./sources/skoda.png" alt="alternate" class="logos logo4">
+                <img src="./sources/skoda.png" alt="alternate" class="logos logo5">
+                <img src="./sources/skoda.png" alt="alternate" class="logos logo6">
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1> DONE >>> Ritankar </h1>
+    </div>
+
+</body>
+
+</html>

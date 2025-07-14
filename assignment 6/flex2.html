@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-2</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .main{
+            height: 350px;
+            width: 500px;
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem;
+            background-color: lightgreen;
+
+        }
+        .rows{
+            flex-grow: 1;
+            /* border: 1px solid black; */
+            
+        }
+        .row1{
+            display: flex;
+        }
+        .commonrow1{
+            /* border: 1px solid black; */
+            flex-grow: 1;
+            gap: 1rem;
+            margin: 1rem;
+        }
+        .row1col2{
+            display: flex;
+            gap: 0;
+        
+        }
+        .commonrow1col1{
+            flex-grow: 1;
+            /* border: 1px solid black; */
+        
+
+        }
+        .row2{
+            display: flex;
+            gap: 1rem;
+        }
+        .commonrow2{
+            flex-grow: 1;
+            display: flex;
+            /* border: 1px solid red; */
+            gap: 1rem;
+            flex-direction: column;
+        }
+        
+        .row2col22a{
+            flex-grow: 1;
+            
+        }
+        .row2col22b{
+            flex-grow: 1;
+            
+        }
+        .row3col1{
+            display: flex;
+            gap: 1rem;
+        }
+        .row3{
+            display: flex;
+            /* gap: 1rem; */
+            /* justify-content: space-evenly; */
+            
+        }
+        
+
+        .row3col1{
+            flex-grow: 2;
+            margin: 0.5rem;
+        }
+        .row3col2{
+            flex-grow: 1;
+            margin: 0.5rem;
+        }
+        .row3col3{
+            flex-grow: 1;
+            margin: 0.5rem;
+        }
+        .row3col4{
+            flex-grow: 2;
+            margin: 0.5rem;
+        }
+        .collb{
+            background-color: greenyellow;
+        }
+        .row1col1{
+            background-color: brown;
+        }
+        .row1col3{
+            background-color: brown;
+        }
+        .row1col2{
+            gap: 1rem;
+            background-color: lightgreen;
+        }
+        .row3{
+            background-color: greenyellow;
+        }
+        .commonrow1col1, .commonrow1col2{
+            background-color: lightblue;
+            background-color: brown;
+        }
+        .row2col1, .row2col22{
+            background-color: brown;
+        }
+        .row3col1{
+            background-color: green;
+        }
+        .row3col2{
+            background-color: green;
+        }
+        .row3col3{
+            background-color: green;
+        }
+        .row3col4{
+            background-color: green;
+        }
+        .row2{
+            background-color: greenyellow;
+        }
+
+
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="row1 rows collb">
+            <div class="commonrow1 row1col1"></div>
+            <div class="commonrow1 row1col2" style="padding: 1rem;">
+                <div class="commonrow1col1"></div>
+                <div class="commonrow1col1"></div>
+            </div>
+            <div class="commonrow1 row1col3"></div>
+        </div>
+        <div class="row2 rows">
+            <div class="row2col1 commonrow2"></div>
+            <div class="row2col2 commonrow2">
+                <div class="row2col22 row2col22a"></div>
+                <div class="row2col22 row2col22b"></div>
+            </div>
+        </div>
+        <div class="row3 rows">
+            <div class="row3col1 r3c collb"></div>
+            <div class="row3col2 r3c"></div>
+            <div class="row3col3 r3c"></div>
+            <div class="row3col4 r3c collb"></div>
+        </div>
+    </div>
+    <h1>
+        DONE >>> RITANKAR
+    </h1>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>introcard 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .outside{
+            height: 60vh;
+            width: 80vw;
+            /* border: 1px dotted red; */
+            display: flex;
+            margin: 3rem auto;
+            
+        }
+        .left,.right{
+            flex-grow: 1;
+            /* border: 1px dotted brown; */
+        }
+        .left{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap:2rem;
+            font-size: 4rem;
+            color: blueviolet;
+            border-left: 1rem solid blueviolet;
+            /* margin-left: 3rem; */
+            font-weight: 700;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .up,.photo{
+            flex-grow: 1;
+            /* border: 1px dotted; */
+        }
+        .down{
+            flex-grow: 4;
+            /* border: 1px dotted; */
+        }
+        .down{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .section3,.section4,.section5,.follower{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            
+        }
+        
+        .options{
+            color: white;
+            background-color: blueviolet;
+            padding: 15px 25px;
+            border-radius: 35px;
+        }
+        .icon-aa{
+            height: 25px;
+            width: auto;
+        }
+        .down{
+            gap: 1rem;
+        }
+        .image1s{
+            height: 50px;
+            width: auto;
+        }
+        .down>.section1{
+            font-size: 35px;
+        }
+        .down>.section2{
+            font-size: 20px;
+        }
+        .down>.section4{
+            font-size: 25px;
+        }
+        .section5{
+            font-size: 25px;
+        }
+        .follower{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .up{
+            height: 30%;
+        }
+        .down {
+            height: 70%;
+        }
+        .middle{
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .photo{
+            border-radius: 100%;
+        }
+        .section1{
+            margin-top: 10%;
+        }
+        .right{
+            background-color: aliceblue;
+            border-radius: 25px; 
+            /* border: 2px solid red; */
+            box-shadow: 4px 8px 12px;
+
+        }
+        .up{
+            background-color: blueviolet;
+            border-radius: 25px 25px 0px 0px;
+        }
+
+
+
+        
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="outside">
+        <div class="left">
+            <p>Profile</p>
+            <p>Card</p>
+            <p>UI Design</p>
+        </div>
+
+        <div class="right">
+            <div class="up"></div>
+            <div class="middle">
+                <img src="./sources/bacchi.jpeg" alt="" class="photo">
+            </div>
+            
+            <div class="down">
+                <div class="section1">CodingLab</div>
+                <div class="section2">Youtuber & Blogger</div>
+                <div class="section3">
+                    <div class="icons icon1">
+                        <img src="./sources/communication.png" alt="facebookloading" class="image1s">
+                    </div>
+                    <div class="icons icon2">
+                        <img src="./sources/communication.png" alt="facebookloading" class="image1s">
+                    </div>
+                    <div class="icons icon3">
+                        <img src="./sources/communication.png" alt="facebookloading" class="image1s">
+                    </div>
+                    <div class="icons icon4">
+                        <img src="./sources/communication.png" alt="facebookloading" class="image1s">
+                    </div>
+                </div>
+                <div class="section4">
+                    <div class="options option1">Subscribe</div>
+                    <div class="options option2">Message</div>
+                </div>
+                <div class="section5">
+                    <div class="follower">
+                        <img src="./sources/heart.png" alt="alternate for icons" class="icon-aa">
+                        <div class="nof">66.84k |</div>
+                    </div>
+                    <div class="follower">
+                        <img src="./sources/heart.png" alt="alternate for icons" class="icon-aa">
+                        <div class="nof">66.84k |</div>
+                    </div>
+                    <div class="follower">
+                        <img src="./sources/heart.png" alt="alternate for icons" class="icon-aa">
+                        <div class="nof">66.84k</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <h1> DONE >>> Ritankar </h1>
+    </div>
+</body>
+</html>

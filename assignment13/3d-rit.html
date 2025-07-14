@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cube of cat</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    .cube-container {
+      width: 500px;
+      height: 500px;
+      perspective: 600px;
+      border: 1px solid black;
+      margin: 5rem auto;
+    }
+
+    .cube-container:hover > .cube-3d {
+      transform: translate(-50%, -50%) rotateY(360deg) rotateX(360deg);
+    }
+
+    .cube-3d {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 200px;
+      height: 200px;
+      position: relative;
+      transform-style: preserve-3d;
+      transform: translate(-50%, -50%) rotateY(0deg) rotateX(0deg);
+      transition: all 5s ease;
+    }
+
+    .cube-face {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      /* background-color: rgba(255, 0, 0, .5); */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      color: white;
+    }
+
+    .face-front {
+      transform: rotateY(0deg) translateZ(100px);
+      background-color: red;
+      border: 2px solid white;
+    }
+
+    .face-back {
+      transform: rotateY(180deg) translateZ(100px);
+      background-color: red;
+      border: 2px solid white;
+    }
+
+    .face-right {
+      transform: rotateY(90deg) translateZ(100px);
+      background-color: red;
+      border: 2px solid white;
+    }
+
+    .face-left {
+      transform: rotateY(-90deg) translateZ(100px);
+      background-color: red;
+      border: 2px solid white;
+    }
+
+    .face-top {
+      transform: rotateX(90deg) translateZ(100px);
+      background-color: red;
+      border: 2px solid white;
+    }
+
+    .face-bottom {
+      transform: rotateX(-90deg) translateZ(100px);
+      background-color: red;
+      border: 2px solid white;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="cube-container">
+    <div class="cube-3d">
+      <div class="cube-face face-front"><img src="./cat.jpeg" alt=""></div>
+      <div class="cube-face face-back"><img src="./cat.jpeg" alt=""></div>
+      <div class="cube-face face-right"><img src="./cat.jpeg" alt=""></div>
+      <div class="cube-face face-left"><img src="./cat.jpeg" alt=""></div>
+      <div class="cube-face face-top"><img src="./cat.jpeg" alt=""></div>
+      <div class="cube-face face-bottom"><img src="./cat.jpeg" alt=""></div>
+    </div>
+  </div>
+  <div>
+        <h1>DONE>>>RITANKAR</h1>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .g {
+            height: 80vh;
+            width: 80vw;
+            /* border: 1px dotted black; */
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 1rem;
+            padding: 1rem;
+            background-color: black;
+            justify-self: center;
+        }
+        .item1 {
+            grid-row: 1 / 4;
+            grid-column: 1 / 2;
+        }
+        .item2{
+            grid-row: 1 / 2;
+            grid-column: 2 / 4;
+        }
+        .item8{
+            grid-row: 2/4;
+            grid-column: 4/5;
+        }
+        .item3, .item5, .item12,.item9{
+            display:none;
+        }
+        
+        
+        
+
+    </style>
+
+</head>
+
+<body>
+    <div class="g">
+        <div class="items item1" style="background-color: green;"></div>
+        <div class="items item2" style="background-color: green;"></div>
+        <div class="items item3"></div>
+        <div class="items item4" style="background-color: red;"></div>
+        <div class="items item5"></div>
+        <div class="items item6" style="background-color: yellow;"></div>
+        <div class="items item7" style="background-color: red;"></div>
+        <div class="items item8" style="background-color: green;"></div>
+        <div class="items item9"></div>
+        <div class="items item10" style="background-color: red;"></div>
+        <div class="items item11" style="background-color: yellow;"></div>
+        <div class="items item12"></div>
+    </div>
+    <h1>
+        DONE >>> RITANKAR
+    </h1>
+</body>
+
+</html>

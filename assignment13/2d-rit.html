@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>panel</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 2rem;
+      font-family: sans-serif;
+    }
+
+    .parent {
+      width: 600px;
+      height: 600px;
+      position: relative;
+      perspective: 600px;
+      margin: 2rem auto;
+    }
+
+    .box {
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.5s ease;
+      background-color: antiquewhite;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      font-size: 40px;
+      font-family: sans-serif;
+    }
+
+    .parent:hover > .box-1 {
+      background-color: lightcoral;
+      scale: 1.2;
+      transform: translate(-50%, -50%) rotateX(45deg) rotateY(45deg) translateZ(0px);
+    }
+
+    .parent:hover > .box-2 {
+      background-color: lightgreen;
+      scale: 1.2;
+      transform: translate(-50%, -50%) rotateX(45deg) rotateY(45deg) translateZ(50px);
+    }
+
+    .parent:hover > .box-3 {
+      background-color: lightgray;
+      scale: 1.2;
+      transform: translate(-50%, -50%) rotateX(45deg) rotateY(45deg) translateZ(100px);
+    }
+
+    .parent:hover > .box-4 {
+      background-color: lightslategrey;
+      scale: 1.2;
+      transform: translate(-50%, -50%) rotateX(45deg) rotateY(45deg) translateZ(150px);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>3D Panels</h1>
+
+  <div class="parent">
+    <div class="box box-1">RITESH</div>
+    <div class="box box-2">LAXMAN</div>
+    <div class="box box-3">HARBAJI</div>
+    <div class="box box-4">ITANKAR</div>
+  </div>
+  <div>
+        <h1>DONE>>>RITANKAR</h1>
+    </div>
+
+</body>
+</html>

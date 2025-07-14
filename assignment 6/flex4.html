@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 1.3rem;
+            text-transform: capitalize;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+        
+
+        .main {
+            height: 80vh;
+            width: 80vw;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .head,
+        .p2,
+        .foot {
+            flex-grow: 1;
+        }
+
+        .p2 {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .left {
+            flex-grow: 1;
+        }
+
+        .aside {
+            flex-grow: 1;
+        }
+
+        .right {
+            flex-grow: 5;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .photos {
+            display: flex;
+            justify-content: space-evenly !important;
+        }
+
+        .img {
+            height: 100px;
+            width: 100px;
+
+            /* flex-grow: 1; */
+
+        }
+
+        .head,
+        .foot {
+            align-content: center;
+            text-align: center;
+        }
+
+        .left {
+            align-content: center;
+            justify-items: center;
+        }
+        .arti{
+            text-align: center;
+        }
+        .photos{
+            align-content: center;
+            align-items: end;
+            /* align-self: center; */
+            
+        }
+        .img{
+            align-content: center;
+            text-align: center;
+            
+        }
+        .right{
+            justify-content: end;
+        }
+        .main{
+            padding: 1rem;
+            background-color: rgb(253, 205, 212);
+        }
+        .right{
+            background-color: rgb(247, 76, 104);
+        }
+        .head, .foot{
+            background-color: skyblue;
+        }
+        .left{
+            background-color: blue;
+        }
+        .img{
+            background-color: gainsboro;
+        }
+        .photos{
+            padding-bottom: 1rem;
+        }
+
+        
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="main bor">
+        <div class="head bor">header</div>
+        <div class="p2 bor">
+            <div class="left bor">
+                <div class="aside bor">aside</div>
+            </div>
+            <div class="right bor">
+                <div class="arti bor">article</div>
+                <div class="photos bor">
+                    <div class="img bor">image</div>
+                    <div class="img bor">image</div>
+                    <div class="img bor">image</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="foot bor">footer</div>
+
+
+    </div>
+    <h1 style="color: black;">
+        DONE >>> RITANKAR
+    </h1>
+</body>
+
+</html>

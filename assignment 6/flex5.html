@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            height: 50vh;
+            width: 70vw;
+        }
+        /* 
+        .border {
+            border: 1px solid red;
+        } 
+        
+        */
+        .main{
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+        }
+        .top{
+            flex-grow: 1;
+            gap: .5rem;
+        }
+        .section{
+            flex-grow: 4;
+
+        }
+        .top, .section{
+            display: flex;
+            gap: .5rem;
+        }
+        .ccr1, .left, .right{
+            flex-grow: 1;
+
+        }
+        .ccr1{
+            background-color: brown;
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+        }
+        .commonbaby{
+            flex-grow: 1;
+        }
+        .left{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .baad{
+            height: 30%;
+            width: 30%;
+            background-color: yellow;
+        }
+        .commonbaby{
+            background-color: green;
+        }
+        .left{
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main border">
+        <div class="top border">
+            <div class="r1ch1 ccr1 border"></div>
+            <div class="r1ch2 ccr1 border"></div>
+            <div class="r1ch3 ccr1 border"></div>
+        </div>
+        <div class="section border">
+            <div class="left border">
+                <div class="baad border"></div>
+            </div>
+            <div class="right border">
+                <div class="commonbaby border baby1"></div>
+                <div class="commonbaby border baby2"></div>
+                <div class="commonbaby border baby3"></div>
+                <div class="commonbaby border baby4"></div>
+            </div>
+        </div>
+    </div>
+    <h1>
+        DONE >>> RITANKAR
+    </h1>
+</body>
+
+</html>

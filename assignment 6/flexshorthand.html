@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexshorthand</title>
+    <style>
+        .container {
+            height: 500px;
+            width: 300px;
+            border: 1px solid black;
+            display: flex;
+            flex-flow: wrap column-reverse;
+            /* flex-flow: <wrap/nowrap> <direction>; */
+
+
+        }
+
+        .items {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+
+        }
+
+        /* flex: <flex-grow> <flex-shrink> <flex-basis>; */
+
+        .parent {
+            height: 502px;
+            width: 802px;
+            border: 1px solid red;
+            display: flex;
+        }
+
+        .childs {
+            /* height: 200px; */
+            /* width: 200px; */
+            border: 1px solid red;
+            /* flex-shrink: 0; */
+        }
+
+        .child1 {
+            /* flex: <flex-grow> <flex-shrink> <flex-basis>; */
+            flex: 1 0 50%;
+        }
+
+        .child2 {
+            /* flex: <flex-grow> <flex-shrink> <flex-basis>; */
+            flex: 1 0 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="items item1">ITEM-1</div>
+        <div class="items item2">ITEM-2</div>
+        <div class="items item3">ITEM-3</div>
+        <div class="items item4">ITEM-4</div>
+    </div>
+
+    <div class="parent">
+        <div class="childs child1">CHILD-1</div>
+        <div class="childs child2">CHILD-2</div>
+    </div>
+</body>
+<div>
+    <h1>RITANKAR</h1>
+</div>
+</html>

@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-4 {grid included}</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .great-grand-father{
+            /* border: 1px solid red; */
+            /* background-color: yellow; */
+            display: flex;
+            /* gap: 1rem; */
+            height: 800px;
+            width: 800px;
+            flex-direction: row;
+            align-content: center;
+            justify-self: center;
+
+
+        }
+        .grand-father1, .grand-father2{
+            /* border: 1px solid red; */
+            /* background-color: yellow; */
+            gap: 3rem;
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            
+        }
+        
+        .father1, .father2{
+            /* border: 1px solid red; */
+            /* background-color: yellow; */
+            gap: 1rem;
+            display: flex;
+            flex-grow: 1;
+        }
+        .fatherofchild1,.fatherofchild2{
+            display: grid;
+            grid-template-rows: 1fr 1fr;        
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        .size{
+            width: 350px;
+            height: 350px;
+        }
+        .dc{
+            background-color: darkgreen;
+        }
+        .wc{
+            background-color: aquamarine;
+        }
+        
+        
+    </style>
+</head>
+<body>
+
+
+    <div class="great-grand-father">
+        <div class="grand-father1">
+            <div class="father1 size dc"></div>
+            <div class="father2 size fatherofchild2">
+                <div class="childs child1 wc"></div>
+                <div class="childs child2 wc"></div>
+                <div class="childs child3 wc"></div>
+                <div class="childs child4 wc"></div>
+            </div>
+        </div>
+        <div class="grand-father2 ">
+            <div class="father1 size  fatherofchild1">
+                <div class="childs child1 wc"></div>
+                <div class="childs child2 wc"></div>
+                <div class="childs child3 wc"></div>
+                <div class="childs child4 wc"></div>
+            </div>
+            <div class="size father2 dc" ></div>
+        </div>
+    </div>
+    <h1>
+        DONE >>> RITANKAR
+    </h1>
+</body>
+</html>

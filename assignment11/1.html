@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outline & placeholder pseudo elements</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .h1 {
+            margin: 3rem auto;
+            border: 20px solid black;
+            outline: 20px solid red;
+            width: 500px;
+        }
+
+        input {
+            height: 2rem;
+            margin: 2rem auto;
+        }
+        div{
+            margin: 2rem 5rem;
+        }
+        input:focus {
+            outline: 2px dotted orangered;
+            /* outline-style: groove; */
+            border: 2px solid green;
+            outline-offset: 10px;
+        }
+        input::placeholder{
+            color: orangered;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>to learn outline(property) and placeholder(speudo element)</h1>
+    <h1 class="h1">HEADING</h1>
+
+    <div>
+        <input type="text" placeholder="enter your name">
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eligendi natus quisquam atque minima doloribus
+        amet facere fugit quo maiores, rem aspernatur dolor soluta harum culpa dicta at vitae voluptate corrupti ipsum!
+        Id accusamus ut minus iure cupiditate, hic mollitia rem quos dolorum saepe aspernatur repellat, sunt debitis
+        error. At repellendus expedita asperiores ad odit voluptate nam soluta, nostrum hic repellat placeat. Modi, cum?
+        Provident aperiam doloremque cumque neque quos debitis qui vero, enim beatae, quaerat similique officia non,
+        praesentium ratione dolore natus consequatur omnis consectetur rerum magni nostrum? Tenetur rem dolore
+        exercitationem voluptate a eum aspernatur molestiae at magnam?</p>
+
+        <div>
+            <h1>DONE >>> RITANKAR</h1>
+        </div>
+</body>
+
+</html>

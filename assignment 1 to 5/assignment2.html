@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT - 2</title>
+</head>
+
+<body>
+    <h2>CREATE 5 DIFFERENT TABLES</h2>
+    <hr>
+    <h2>TABLE - 1</h2>
+    <img src="source/table1.jpg" alt="table number 1" width="500px">
+    <table border="1">
+        <caption>TABLE - 1</caption>
+        <thead>
+            <tr>
+                <th>Header Column 1</th>
+                <th>Header Column 2</th>
+                <th>Header Column 3</th>
+                <th>Header Column 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 2 - Item 1</td>
+                <td>Row 2 - Item 2</td>
+                <th>Row 2 : Nested table 1
+                    <table border="1" width="100%">
+                        <tr>
+                            <th>Row 1 Header</th>
+                            <td>
+                                <span style="font-weight: normal;">item</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Row 2 Header</th>
+                            <td>
+                                <span style="font-weight: normal;">item</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Row 2 Header</th>
+                            <td>
+                                <span style="font-weight: normal;">item</span>
+                            </td>
+                        </tr>
+                    </table>
+                </th>
+                <td>Row 2 - Item 4 <br> A second line</td>
+            </tr>
+            <tr>
+                <td>Row 3 - Item 1</td>
+                <td>Row 3 - Item 2</td>
+                <td></td>
+                <td>Row 3 - Item 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Row 4 - Item 1</td>
+                <td>Row 4 - Item 2</td>
+                <td>Row 4 - Item 3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <hr>
+    <h2>TABLE - 2</h2>
+    <img src="source/table2.png" alt="table number 2" width="500px">
+    <table border="2" style="border-collapse: collapse;">
+        <caption>TABLE - 2</caption>
+
+        <tr>
+            <th colspan="6">Time Table</th>
+        </tr>
+        <tr>
+            <td rowspan="6">Hours</td>
+            <th>mon</th>
+            <th>tues</th>
+            <th>Wed</th>
+            <th>Thrus</th>
+            <th>Fri</th>
+        </tr>
+
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <th colspan="5">Lunch</th>
+        </tr>
+
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td rowspan="2">Project</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+
+        </tr>
+
+
+
+
+
+    </table>
+
+
+    <hr>
+    <h2>TABLE - 3</h2>
+    <img src="source/table3.jpg" alt="table number 3" width="500px">
+    <table border="1">
+        <caption>TABLE - 3</caption>
+        <thead>
+            <tr>
+                <th>Header column 1</th>
+                <th>Header column 2</th>
+                <th>Header column 3</th>
+                <th>Header column 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 1 - Item 1</td>
+                <td>Row 2 - Item 2</td>
+                <th rowspan="2">Row 2:Nested Table1
+                    
+                    <table border="1">
+                        <tr>
+                            <th>Row 1 Header</th>
+                            <td><span style="font-weight: normal;">item</span></td>
+                        </tr>
+                        <tr>
+                            <th>Row 2 Header</th>
+                            <td><span style="font-weight: normal;">item</span></td>
+                        </tr>
+                        <tr>
+                            <th>Row 3 Header</th>
+                            <td><span style="font-weight: normal;">item</span></td>
+                        </tr>
+                    </table>
+                </th>
+                <td>Row 2 - Item 4 <br>A second line</td>
+            <tr>
+                <th>Row 3 : Nested Table 2
+                    <table border="1">
+                        <tr>
+                            <th>Row 1 Header</th>
+                            <td><span style="font-weight: normal;">item</span></td>
+                        </tr>
+                        <tr>
+                            <th>Row 1 Header</th>
+                            <td><span style="font-weight: normal;">item</span></td>
+                        </tr>
+                    </table>
+                </th>
+                <td>
+                    Row 3 - Item 2
+                </td>
+                <td rowspan="2">Row 3 - Item 3</td>
+            </tr>
+            <tr>
+                <td>Row 4 - Item 1</td>
+                <td>Row 4 - Item 2</td>
+                <td>Row 4 - Item 3</td>
+            
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Row 5 - Last row outer table</td>
+            </tr>    
+        </tfoot>
+    </table>
+
+
+    <hr>
+    <h2>TABLE - 4</h2>
+    <img src="source/table4.gif" alt="table number 4" width="500px">
+    <table border="1">
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="3">Seminar</th>
+        </tr>
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00 a.m.</td>
+            <td rowspan="2">5:00 p.m.</td>
+            <td>Introduction to XML</td>
+        </tr>
+        <tr>
+            <td>Validity: DTD and Relax NG</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>8:00 a.m.</td>
+            <td>11:00 a.m.</td>
+            <td rowspan="2">XPath</td>
+        </tr>
+        <tr>
+            <td>11:00 a.m.</td>
+            <td>2:00 p.m.</td>
+        </tr>
+        <tr>
+            <td>2:00 p.m.</td>
+            <td>5:00 p.m.</td>
+            <td rowspan="1">XSL Transformation</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00 a.m.</td>
+            <td>12:00 p.m.</td>
+            <td>XSL Formatting Objects</td>
+        </tr>
+    </table>
+    
+
+    <hr>
+    <h2>TABLE - 5</h2>
+    <img src="source/table5.png" alt="table number 5" width="500px">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Level1</th>
+                <th>Level2</th>
+                <th>Level3</th>
+                <th>Info</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+               <td rowspan="6">System</td> 
+               <td rowspan="4">System Apps</td>
+               <td rowspan="3">SystemEnv</td>
+               <td>App Test</td>
+               <td>foo</td>
+            </tr>
+            <tr>
+                <td>App Memory</td>
+                <td>foo</td>
+            </tr>
+            <tr>
+                <td>App Memory</td>
+                <td>bar</td>
+            </tr>
+            <tr>
+                <td>SystemEnv2</td>
+                <td>App Test</td>
+                <td>bar</td>
+            </tr>
+            <tr>
+                <td rowspan="2">System Memory</td>
+                <td rowspan="2">Memory Test</td>
+                <td>Memory Func</td>
+                <td>foo</td>
+            </tr>
+            <tr>
+                <td>Apes Test</td>
+                <td>foo</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+    
+
+<hr>
+    <h1>DONE >>> RITANKAR</h1>
+</body>
+
+</html>

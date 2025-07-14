@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop up element</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 30px;
+        }
+
+        .redbox {
+            height: 50vh;
+            width: 50vw;
+            background-color: red;
+            display: none;
+        }
+
+        .click-aa {
+            display: block;
+        }
+
+        input:checked+.redbox {
+            display: block;
+        }
+
+
+        .greenbox {
+            height: 50vh;
+            width: 50vw;
+            background-color: green;
+            display: none;
+        }
+
+        /* .click1-aa{
+            display: block;
+        } */
+        .inputG:checked+.greenbox {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="click-a" class="click-aa">OPEN RED BOX</label>
+    <input type="checkbox" id="click-a" hidden>
+
+    <div class="redbox">
+        RED BOX OPENED SUCCESSFULLY
+        <label for="click-a" style="background-color: white;">CLOSE RED BOX</label>
+    </div>
+
+    <label for="click1-a" class="class1-aa">OPEN GREEN BOX</label>
+    <input type="checkbox" id="click1-a" class="inputG">
+
+    <div class="greenbox">
+        GREEN BOX OPENED SUCCESSFULLY
+        <label for="click1-a" style="background-color: white;">CLOSE GREEN BOX</label>
+    </div>
+    <div>
+        <h1> DONE >>> Ritankar </h1>
+    </div>
+
+
+
+</body>
+
+</html>
