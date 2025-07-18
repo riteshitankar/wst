@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin | padding | border</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .containers{
+            height: 200px;
+            width: 500px;
+            border: 2px dotted red;
+        }
+        .items{
+            height: 100px; 
+            width: 100px;
+            border: 1px solid red;
+        }
+        .parents{
+            height: 200px;
+            width: 500px;
+            border: 2px dotted red;
+        }
+        .childs{
+            height: 50px;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- recreate margin|padding & border in bootstrap -->
+
+    <!--
+    m - for classes that set margin
+    p - for classes that set padding
+    Where sides is one of:
+
+    t - for classes that set margin-top or padding-top
+    b - for classes that set margin-bottom or padding-bottom
+    s - (start) for classes that set margin-left or padding-left in LTR, margin-right or padding-right in RTL
+    e - (end) for classes that set margin-right or padding-right in LTR, margin-left or padding-left in RTL
+    x - for classes that set both *-left and *-right
+    y - for classes that set both *-top and *-bottom
+    blank - for classes that set a margin or padding on all 4 sides of the element
+    Where size is one of:
+
+    0 - for classes that eliminate the margin or padding by setting it to 0
+    1 - (by default) for classes that set the margin or padding to $spacer * .25
+    2 - (by default) for classes that set the margin or padding to $spacer * .5
+    3 - (by default) for classes that set the margin or padding to $spacer
+    4 - (by default) for classes that set the margin or padding to $spacer * 1.5
+    5 - (by default) for classes that set the margin or padding to $spacer * 3
+    auto - for classes that set the margin to auto
+    -->
+    <div class="containers container1 bg-primary" style="display: flex;">
+        <div class="items item1 bg-warning mt-5">margin top</div>
+        <div class="items item2 bg-warning mb-5">margin bottom</div>
+        <div class="items item3 bg-warning ms-5">margin left</div>
+        <div class="items item4 bg-warning me-5">margin right</div>
+        <div class=""></div>
+    </div>
+    <div class="containers container2 bg-primary" style="display: flex;">
+        <div class="items item1 bg-danger pt-5">padding top</div>
+        <div class="items item2 bg-danger pb-5">padding bottom</div>
+        <div class="items item3 bg-danger ps-5">padding left</div>
+        <div class="items item4 bg-danger pe-5">padding right</div>
+    </div>
+    <div class="containers container3 bg-info" style="display: flex;">
+        <div class="items item1 my-5 bg-secondary">margin top bottom</div>
+        <div class="items item2 mx-5 bg-secondary">margin left right</div>
+    </div>
+    <div class="containers container4 bg-secondary" style="display: flex;">
+        <div class="items item1 py-5 bg-info">padding top bottom</div>
+        <div class="items item2 px-5 bg-info">padding left right</div>
+    </div>
+    <div class="containers container5">
+        <div class="items item1 m-5">all side margin 5</div>
+    </div>
+    <div class="containers container6">
+        <div class="items item1 m-auto">all side margin auto</div>
+    </div>
+    <div class="containers container7">
+        <div class="items item1 p-5">all side padding 5</div>
+    </div>
+    <div class="containers container8">
+        <div class="items item1 p-auto">all side padding auto</div>
+    </div>
+
+
+    <div class="border border-5 border-danger " style="height: 200px;width: 200px;">border</div>
+
+    <div>
+        <h1>DONE >>> RITANKAR</h1>
+    </div>
+</body>
+
+</html>
