@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position,display</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <style>
+        .containers {
+            height: 500px;
+            width: auto;
+        }
+
+        .items {
+            height: 100px;
+            width: 300px;
+        }
+
+        .parents {
+            height: 120px;
+            width: 500px;
+        }
+
+        .childs {
+            height: 80px;
+            width: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- position,display  -->
+    <!-- position-static; position-relative, position-absolute ; position-fixed;position-sticky;  -->
+
+    <!-- display  -->
+
+    <div class="containers contaier1 border border-1 border-success">
+        <div class="items item1 border border-danger border-1 h3 position-static">position-static</div>
+        <div class="items item2 border border-danger border-1 h3 position-relative">position-relative</div>
+        <div class="items item3 border border-danger border-1 h3 position-absolute">position-absolute</div>
+        <div class="items item4 border border-danger border-1 h3 position-fixed">position-fixed</div>
+        <div style="top: 10px;" class="items item5 border border-danger border-1 h3 position-sticky">position-sticky
+        </div>
+    </div>
+
+    <div class="z-3 containers container2 bg-success">
+        <!-- <div class="items item1 bg-warning text-white h2 sticky-top">sticky-top</div> -->
+        <!-- <div class="items item2 bg-danger text-white h2 fixed-bottom">fixed-bottom</div> -->
+    </div>
+
+
+
+    <div class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus earum necessitatibus ipsam molestias libero
+        corrupti, harum quibusdam, dolorum doloremque commodi, similique expedita quis! Saepe esse, nam vel vitae modi
+        atque repudiandae velit. Iure recusandae nisi doloremque eos, nostrum architecto vitae nemo placeat hic
+        suscipit, distinctio et voluptas, eius dolores illo mollitia laudantium necessitatibus eveniet alias sint modi?
+        Dolorem maiores suscipit fuga, sequi quis ratione dolor distinctio ullam. Voluptas accusamus corporis
+        reprehenderit, facere perferendis ea officia ducimus aperiam placeat. Placeat itaque, assumenda repellat,
+        deserunt tempore fuga nobis sequi numquam omnis facilis dignissimos architecto, harum aliquid accusantium unde
+        delectus magni! Commodi temporibus quibusdam minus optio atque reprehenderit cumque veniam labore aliquid ab
+        nulla nemo, animi molestiae expedita eveniet quo ipsum odio enim obcaecati iure saepe blanditiis? Eos in, omnis
+        sapiente vitae id ducimus quaerat nisi officiis eveniet tenetur dolorum optio qui odit temporibus saepe
+        reiciendis labore fugiat voluptatum. Sapiente neque iste quaerat dolores voluptates ad corporis, vero delectus
+        suscipit tenetur fugit earum odit dignissimos, sed quis quisquam eligendi explicabo officiis. Nisi eligendi
+        necessitatibus, magni animi doloremque repellendus consequatur. Quo cupiditate voluptatum, maxime dignissimos
+        exercitationem aut facere deserunt rerum eligendi ducimus esse neque eaque praesentium reiciendis nulla dolor
+        quam maiores voluptatem blanditiis asperiores.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio id consequuntur illo! Minus ducimus sed cum
+        autem, illum corporis at sint distinctio accusamus laboriosam odit vitae inventore quos eveniet iste quia ullam
+        nam quae labore reprehenderit aspernatur non atque ipsam! Delectus quos, magni ducimus doloremque, cumque, a
+        amet ut saepe suscipit velit minima fugiat tenetur aliquid voluptatem vitae impedit esse debitis ullam laborum
+        repudiandae unde non. Reprehenderit vel eaque amet beatae alias totam ratione in, voluptas cum nam. Similique
+        harum voluptatibus sunt, nesciunt inventore id ipsum possimus corrupti praesentium accusantium explicabo,
+        consequuntur dignissimos voluptates ratione incidunt aut perferendis veritatis quidem expedita velit eius
+        asperiores. Illum at iure enim officiis officia repudiandae incidunt accusamus magni ut pariatur, vitae,
+        assumenda adipisci, accusantium nemo soluta explicabo autem itaque quis vel recusandae maiores sapiente
+        laboriosam ipsa? Consectetur corporis iure dignissimos, accusantium ad earum necessitatibus cumque est excepturi
+        nostrum impedit perferendis! Saepe a deserunt accusantium quia voluptatibus minus, modi aperiam laborum magnam
+        nisi necessitatibus perspiciatis neque velit eaque temporibus harum at? Minus, quos modi? Temporibus quae alias
+        provident consectetur quos commodi incidunt cupiditate explicabo qui. Voluptatem, commodi maxime! Dolorum nam
+        consequuntur odio recusandae libero. Tenetur, fugit unde quae omnis sit voluptatibus ab reprehenderit aperiam
+        quas.
+    </div>
+
+
+
+    <!-- display  -->
+
+    <div class="parents parent1 border border-2 border-warning d-flex">
+        <div class="childs child1 border border-1 border-danger bg-success"></div>
+        <div class="childs child2 border border-1 border-danger bg-success"></div>
+        <div class="childs child3 border border-1 border-danger bg-success"></div>
+        <div class="childs child4 border border-1 border-danger bg-success"></div>
+        <div class="childs child5 border border-1 border-danger bg-success"></div>
+        <div class="childs child6 border border-1 border-danger bg-success"></div>
+    </div>
+
+
+
+    <!-- none -->
+    <!-- inline -->
+    <!-- inline-block -->
+    <!-- block -->
+    <!-- table -->
+    <!-- table-cell -->
+    <!-- table-row -->
+    <!-- flex -->
+    <!-- inline-flex -->
+
+    <div class="parents parent1 bg-warning">
+        <div class="childs child1 bg-danger border border-2 d-none">none</div>
+        <div class="childs child2 bg-danger border border-2 d-block">block</div>
+        <div class="childs child3 bg-danger border border-2 d-inline">inline</div>
+        <div class="childs child4 bg-danger border border-2 d-inline-block">inlineblock</div>
+
+    </div>
+    <br>
+
+    <hr>
+    <div class="bg-warning position-relative" style="height: 400px; width: 400px; margin: 50px auto;">
+        <div class="bg-danger position-absolute top-50 start-50 translate-middle" style="height: 100px; width: 100px;">
+        </div>
+    </div>
+    <!-- ????????????????????????????????????? what is the problem????????????????????? -->
+
+    <div>
+        <h1>DONE >>> RITANKAR</h1>
+    </div>
+
+</body>
+
+</html>
