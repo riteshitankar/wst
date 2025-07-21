@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float | interactions | link | overflow</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <style>
+        .containers {
+            height: 500px;
+            width: 500px;
+        }
+
+        .items {
+            height: 100px;
+            width: 100px;
+        }
+        .gg{
+            height: 300px;
+            width: 300px;
+        }
+        .aa{
+            height: 600px;
+            /* width: 600px; */
+            border: 1px solid red;
+            display: flex;
+
+        }
+        .a{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+        }
+        .shadowbox1,.shadowbox2,.shadowbox3,.shadowbox4{
+            height: 250px;
+            width: 250px;
+            margin: 50px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- float | interactions | link | objectfit | overflow | opacity | shadow | sizing  -->
+
+    <!-- float  -->
+
+    <div class="containers border border-1 border-dark">
+        <div class="items item1 border border-1 border-danger float-start">THIS IS FOR THE LEFT HAND SIDE</div>
+        <div class="items item2 border border-1 border-danger float-end">THIS IS FOR RIGHT HAND SIDE</div>
+        <div class="items item3 border border-1 border-danger float-none">THIS IS NONE</div>
+        <!-- <div class="items item4 border border-1 border-danger">Lorem ipsum dolor sit.</div> -->
+    </div>
+    <div class="containers container2 border border-2 border-danger">
+
+        <img src="./download.jpeg" alt="alternate text" class="border border-1 border-success float-end">
+
+        <img src="./download.jpeg" alt="alternate text" class="border border-1 border-success float-start">
+
+        <div class="border border-1 border-success float-none">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quae, quis? Corporis quidem commodi, in cupiditate alias quam asperiores voluptates cumque facere assumenda
+            quasi quia iste a vel. Illo minima possimus quos corrupti veniam soluta consectetur, quaerat voluptas,
+            pariatur voluptatem quia. Magnam reiciendis nisi nostrum, quae facilis odio? Nobis dicta at, repudiandae
+            consectetur reiciendis nemo et eum ipsum possimus hic iure fuga veritatis alias illo? Dolores aliquid qui
+            voluptate quo praesentium similique laboriosam eos dicta accusantium, suscipit atque est. Accusantium, omnis
+            labore totam doloribus in cum esse, nesciunt at adipisci sint reprehenderit amet molestias voluptatum? Porro
+            laboriosam tempora a temporibus ducimus.</div>
+
+    </div>
+
+
+    <!-- interations  -->
+    
+    <!-- text-selection चा मामला  -->
+    
+    <p class="user-select-all">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla nostrum culpa delectus.
+        <br>
+        एका क्लिक मध्ये पुरा पॅराग्राफ सिलेक्ट (all )
+    </p>
+    <p class="user-select-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptatibus ullam dolorem!.
+        <br>
+        normal behaviour : दोनदा क्लिक केल्यावर एक शब्द सिलेक्ट होणार ; आणि तीनदा सिलेक्ट केल्यावर पुर वाक्य सिलेक्ट होणार 
+
+    </p>
+    <p class="user-select-none">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus aspernatur quo doloribus!
+        <br>
+        एक नंबर चा मुजोर; सिलेक्ट च नाही होत काही करा 
+
+    </p>
+
+
+    <!-- वेगद्या वेगद्या टाइप चे pointer events  -->
+
+    <p class="bg-info bg-opacity-25">
+        <a href="https://www.google.com" class="pe-none">go to google </a> | येचातला विषय असा आहे की मी जर या link वर mouse ने क्लिक करणार तर ते ओपन नाही होणार.  I will
+      definately use keyboard here to interact with the link.
+    </p>
+    <p class="bg-warning bg-opacity-25">
+        <a href="https://www.google.com" class="pe-auto">go to google again</a> | normal, जस a href काम करते तस !
+    </p>
+    <p class="bg-danger bg-opacity-25">
+        <a href="https://www.google.com" class="pe-none" tabindex="-1">go to google last time</a>| इथे आपण एक attribute दिल tabindex -1, ज्या मुडे इथे माऊस वापरा की कीबोर्ड काही फरक पडणार नाही.
+    </p>
+    <p class="bg-secondary bg-opacity-25">
+        <a class="pe-none" tabindex="-1" aria-disabled="true" href="https://www.facebook.com">
+            go to facebook
+        </a>| इथला विषय असा आहे, screen reader या लिंक ला ignore मारणार !
+    </p>
+
+    <div class="bg-primary bg-opacity-50">
+        <li>pe-auto : work like a normal link</li>
+        <li>pe-none : can not interact with link using a mouse</li>
+        <li>tabindex="-1" : not interact with both keyboard and mouse {मुजोर }</li>
+        <li>aria-disabled="true" will be igonored by screen reader {mostly used in government websites}</li>
+    </div>
+    <br><br><br>
+    
+    
+    <!-- link -->
+
+    <div class="bg-warning bg-opacity-25">
+        <b>link-opacity-[]</b>
+        <br>
+        <a href="https://www.tcs.com" class="link-opacity-50">TATA CONSULTANCY SERVICES | INDIA 50</a>
+        <a href="https://www.tcs.com" class="link-opacity-75">TATA CONSULTANCY SERVICES | INDIA 75</a>
+        <a href="https://www.tcs.com" class="link-opacity-100">TATA CONSULTANCY SERVICES | INDIA 100</a>
+        <br>
+        <br>
+
+        <b>link-opacity-[]-hover</b>
+        <br>
+        <a href="https://www.tcs.com" class="link-opacity-10-hover">TATA CONSULTANCY SERVICES | INDIA 10</a>
+        <a href="https://www.tcs.com" class="link-opacity-50-hover">TATA CONSULTANCY SERVICES | INDIA 50</a>
+        <br>
+        <br>
+        <b>link-underline-[]</b>
+        <br>
+        <a href="https://www.tcs.com" class="link-underline-primary">TATA CONSULTANCY SERVICES</a>
+        <a href="https://www.tcs.com" class="link-underline-danger">TATA CONSULTANCY SERVICES</a>
+        <a href="https://www.tcs.com" class="link-underline-warning">TATA CONSULTANCY SERVICES</a>
+        <a href="https://www.tcs.com" class="link-underline-dark">TATA CONSULTANCY SERVICES</a>
+        <a href="https://www.tcs.com" class="link-underline-info">TATA CONSULTANCY SERVICES</a>
+        <br>
+        <br>
+        <b>link-offset-[]</b>
+        <a href="https://www.tcs.com" class="link-underline-info link-offset-1">TATA CONSULTANCY SERVICES</a>
+        <a href="https://www.tcs.com" class="link-underline-info link-offset-2">TATA CONSULTANCY SERVICES</a>
+        <a href="https://www.tcs.com" class="link-underline-info link-offset-3">TATA CONSULTANCY SERVICES</a>
+        <br><br>
+        <b>link-underline-opacity-[]</b>
+        <br>
+        <a href="https://www.tcs.com" class="link-underline link-underline-opacity-0">TCS</a>
+        <a href="https://www.tcs.com" class="link-underline link-underline-opacity-50">TCS</a>
+        <a href="https://www.tcs.com" class="link-underline link-underline-opacity-100">TCS</a>
+        <br><br>
+        <b>link-[]</b>
+        <br>
+        <a href="https://www.facebook.com" class="link-underline link-underline-opacity-0 link-danger">facebook.com</a>
+        <a href="https://www.facebook.com" class="link-underline link-underline-warning link-underline-opacity-0 link-warning link-underline-opacity-100-hover">facebook.com</a>
+        <a href="https://www.facebook.com" class="link-underline-opacity-100 link-dark link-underline-dark link-opacity-10-hover  link-underline-opacity-10-hover">facebook.com</a>
+        
+
+    </div>
+    <div>
+        <!-- object-fit  -->
+
+        <img src="./images.jpeg" alt="alternate text" class="gg object-fit-contain border border-2 border-danger">
+        object-fit-contain
+        <br><br>
+        <img src="./images.jpeg" alt="alternate text" class="gg object-fit-cover border border-2 border-danger">
+        object-fit-cover
+        <br><br>
+        <img src="./images.jpeg" alt="al" class="gg object-fit-fill border border-2 border-danger"> object-fit-fill <br><br>
+        <img src="./images.jpeg" alt="" class="gg border border-2 border-danger object-fit-scale">object-fit-scale <br><br>
+        <img src="./images.jpeg" alt="" class="object-fit-none border border-2 border-danger gg">object-fit-none <br><br>
+    </div>
+
+
+    <!-- overflow  -->
+    <div class="bg-warning bg-opacity-50">
+        <div class="aa1 aa">
+            <div class="a a1 overflow-auto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos nam fuga veritatis provident quaerat minima totam natus quasi iure debitis! Obcaecati dolore dolor quos iste sed, nihil blanditiis doloremque aliquid repudiandae repellendus porro quae, molestiae quidem atque deleniti, reiciendis similique id. Dolorum mollitia iste facere vel temporibus, dignissimos nesciunt aspernatur?</div>
+            <div class="a a2 overflow-hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos nam fuga veritatis provident quaerat minima totam natus quasi iure debitis! Obcaecati dolore dolor quos iste sed, nihil blanditiis doloremque aliquid repudiandae repellendus porro quae, molestiae quidem atque deleniti, reiciendis similique id. Dolorum mollitia iste facere vel temporibus, dignissimos nesciunt aspernatur?</div>
+            <div class="a a3 overflow-visible">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos nam fuga veritatis provident quaerat minima totam natus quasi iure debitis! Obcaecati dolore dolor quos iste sed, nihil blanditiis doloremque aliquid repudiandae repellendus porro quae, molestiae quidem atque deleniti, reiciendis similique id. Dolorum mollitia iste facere vel temporibus, dignissimos nesciunt aspernatur?</div>
+            <div class="a a4 overflow-scroll">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos nam fuga veritatis provident quaerat minima totam natus quasi iure debitis! Obcaecati dolore dolor quos iste sed, nihil blanditiis doloremque aliquid repudiandae repellendus porro quae, molestiae quidem atque deleniti, reiciendis similique id. Dolorum mollitia iste facere vel temporibus, dignissimos nesciunt aspernatur?</div>
+        </div>
+        <div class="aa2 aa">
+            <div class="a a1 overflow-x-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, nulla. Illo eligendi, quis commodi nostrum qui dignissimos officiis maiores temporibus! Quasi ipsum architecto dolore consequuntur soluta nisi consectetur rerum id, incidunt culpa? Ex magnam numquam non eveniet quae cupiditate eos quidem fuga, nostrum error voluptatem fugiat, dignissimos rerum vitae quaerat.</div>
+            <div class="a a2 overflow-y-scroll">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet distinctio quia alias natus ducimus vitae illo aliquam ullam at, quae fugiat nemo fuga dignissimos tempora magni commodi iure quis excepturi quos doloremque debitis porro. Cum eaque quo et laboriosam porro. Consectetur exercitationem unde perferendis nobis, accusamus perspiciatis aspernatur minima consequuntur.</div>
+            
+        </div>
+        <!-- <div class="aa3">
+            <div class="a a1"></div>
+            <div class="a a2"></div>
+            <div class="a a3"></div>
+            <div class="a a4"></div>
+        </div> -->
+    </div>
+
+    <!-- opacity -->
+    <div>
+         <h1 class="p-2 bg-primary opacity-25">OPACITY 25</h1>
+         <h1 class="p-2 bg-primary opacity-50">OPACITY 50</h1>
+         <h1 class="p-2 bg-primary opacity-75">OPACITY 75</h1>
+         <h1 class="p-2 bg-primary opacity-100">OPACITY 100</h1>
+    </div>
+
+    <!-- shadow  -->
+    <div class="shadowcon">
+        <div class="shadowbox1 shadow-none"> shadowbox1</div>
+        <div class="shadowbox2 shadow"> shadowbox2</div>
+        <div class="shadowbox3 shadow-sm"> shadowbox3</div>
+        <div class="shadowbox4 shadow-lg"> shadowbox4</div>
+    </div>
+
+    <!-- sizing -->
+    <div class="bg-success" style="width: 80vw; height: 80vh;">
+        <div class="bg-primary w-75 h-75"> primary color
+            <div class="bg-secondary w-50 h-50">secondary color
+                <div class="bg-white w-25 h-25">white
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- in-percentage -->
+    <!-- w-[25,50,75,100] ===> width -->
+    <!-- h-[25,50,75,100] ===> height -->
+    <!-- mw-[25,50,75,100] ===> max-width  -->
+    <!-- mh-[25,50,75,100] ===> max-height -->
+
+    <!-- vw-[25,50,75,100] ===> viewport width  -->
+    <!-- vh-[25,50,75,100] ===> viewport height  -->
+
+
+    <div>
+        <h1>DONE>>>RITANKAR</h1>
+    </div>
+
+</body>
+
+</html>

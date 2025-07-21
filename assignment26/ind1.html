@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <style>
+        *{
+            margin: 0; padding: 0;
+        }
+        .containers{
+            height: 120px;
+            width: 500px;
+        }
+        .items{
+            height: 80px;
+            width: 80px;
+        }
+        .parents{
+            height: 200px;
+        }
+        .par3{
+            height: 300px;
+            width: 300px;
+        }
+        .chs{
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- d-flex [direction] justify-content-[] -->
+    <div class="border border-1 border-black containers container1 bg-warning d-flex row justify-content-center">
+        <div class="items item1 border border-1 border-dark bg-danger">item1</div>
+        <div class="items item2 border border-1 border-dark bg-danger">item2</div>
+        <div class="items item3 border border-1 border-dark bg-danger">item3</div>
+        <div class="items item4 border border-1 border-dark bg-danger">item4</div>
+    </div>
+    <div class="border border-1 border-black containers container2 bg-warning d-flex row justify-content-between">
+        <div class="items item1 border border-1 border-dark bg-danger">item1</div>
+        <div class="items item2 border border-1 border-dark bg-danger">item2</div>
+        <div class="items item3 border border-1 border-dark bg-danger">item3</div>
+        <div class="items item4 border border-1 border-dark bg-danger">item4</div>
+    </div>
+    <div class="border border-1 border-black containers container3 bg-warning d-flex row justify-content-around">
+        <div class="items item1 border border-1 border-dark bg-danger">item1</div>
+        <div class="items item2 border border-1 border-dark bg-danger">item2</div>
+        <div class="items item3 border border-1 border-dark bg-danger">item3</div>
+        <div class="items item4 border border-1 border-dark bg-danger">item4</div>
+    </div>
+    <div class="border border-1 border-black containers container4 bg-warning d-flex row justify-content-evenly">
+        <div class="items item1 border border-1 border-dark bg-danger">item1</div>
+        <div class="items item2 border border-1 border-dark bg-danger">item2</div>
+        <div class="items item3 border border-1 border-dark bg-danger">item3</div>
+        <div class="items item4 border border-1 border-dark bg-danger">item4</div>
+    </div>
+
+    <!-- d-flex [direction] align-items-[] -->
+    <div class="border border-1 border-black containers container5 bg-warning d-flex row-reverse align-items-center">
+        <div class="items item1 border border-1 border-dark bg-danger">item1</div>
+        <div class="items item2 border border-1 border-dark bg-danger">item2</div>
+        <div class="items item3 border border-1 border-dark bg-danger">item3</div>
+        <div class="items item4 border border-1 border-dark bg-danger">item4</div>
+    </div>
+    <div class="border border-1 border-black containers container6 bg-warning d-flex row align-items-start">
+        <div class="items item1 border border-1 border-dark bg-danger">item1</div>
+        <div class="items item2 border border-1 border-dark bg-danger">item2</div>
+        <div class="items item3 border border-1 border-dark bg-danger">item3</div>
+        <div class="items item4 border border-1 border-dark bg-danger">item4</div>
+    </div>
+    <div class="border border-1 border-black containers container7 container3 bg-warning d-flex row align-items-end">
+        <div class="items item1 border border-1 border-dark bg-danger">item1</div>
+        <div class="items item2 border border-1 border-dark bg-danger">item2</div>
+        <div class="items item3 border border-1 border-dark bg-danger">item3</div>
+        <div class="items item4 border border-1 border-dark bg-danger">item4</div>
+    </div>
+    
+    <!-- align-self-stretch -->
+    <div class="parents parent1 bg-primary border border-1 border-dark d-flex column justify-content-center align-items-center">
+        <div class="childs child1 border border-1 border-danger d-flex align-self-stretch">child1</div>
+        <div class="childs child2 border border-1 border-danger d-flex align-self-stretch">child2</div>
+        <div class="childs child3 border border-1 border-danger d-flex align-self-stretch">child3</div>
+        <div class="childs child4 border border-1 border-danger d-flex align-self-stretch">child4</div>
+    </div>
+
+    <!-- flex-grow  -->
+    <div class="parents parent2 bg-primary border border-1 border-dark d-flex column justify-content-center align-items-center">
+        <div class="childs child1 border border-1 border-danger flex-grow-1">child1</div>
+        <div class="childs child2 border border-1 border-danger flex-grow-1">child2</div>
+        <div class="childs child3 border border-1 border-danger flex-grow-1">child3</div>
+        <div class="childs child4 border border-1 border-danger flex-grow-1">child4</div>
+    </div>
+
+    <!-- flex-wrap  -->
+    <div class="par par3 border border-1 border-danger d-flex flex-wrap">
+        <div class="chs ch1 border border-1 border-danger">flex child 1</div>
+        <div class="chs ch2 border border-1 border-danger">flex child 2</div>
+        <div class="chs ch3 border border-1 border-danger">flex child 3</div>
+        <div class="chs ch4 border border-1 border-danger">flex child 4</div>
+        <div class="chs ch5 border border-1 border-danger">flex child 5</div>
+    </div>
+
+    <!-- flex dir column  {0 to 6}-->
+    <div class="parents parent3 bg-info border border-1 border-danger d-flex column">
+        <div class="childs child1 border border-1 border-danger order-3">child1</div>
+        <div class="childs child2 border border-1 border-danger order-1">child2</div>
+        <div class="childs child3 border border-1 border-danger order-2">child3</div>
+    </div>
+
+    <!-- stretch  -->
+    <div class="d-flex bg-primary align-content-stretch flex-wrap parents">
+        <div class="bg-warning border border-1 childrens1">flex1</div>
+        <div class="bg-warning border border-1 childrens2">flex2</div>
+        <div class="bg-warning border border-1 childrens3">flex3</div>
+        <div class="bg-warning border border-1 childrens4">flex4</div>
+        <div class="bg-warning border border-1 childrens5">flex5</div>
+    </div>
+
+    <!-- shrink -->
+    <div class="border border-1 border-dark d-flex">
+        <div class="p1 flex-grow-1 flex-shrink-0 border border-1 border-success" >Lorem ipsum dolor sit amet </div>
+        <div class="p2 flex-grow-1 flex-shrink-1 border border-1 border-success" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem distinctio magnam, consequatur facere expedita vitae voluptatum eius, unde mollitia omnis, dignissimos aliquam?</div>
+    </div>
+    
+
+    <div>
+        <h1>DONE>>>RITANKAR</h1>
+    </div>
+</body>
+</html>
