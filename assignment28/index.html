@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratice break points and bootstrap grid create all it's variations</title>
+    <style>
+        .div1,
+        .div2 {
+            /* height: 50vh; */
+            width: 50vw;
+            border: 1px solid black;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- pratice break points -->
+
+    <!-- breakpoint in spacing  -->
+    <div class="div1 mx-auto my-5 mx-md-1 my-md-1 bg-info">
+        <b>FOR THE SMALL SCREEN THE BOX WILL APPEAR IN IN MIDDLE; AND FOR THE LARGE AND MEDIUM SCREEN THE BOX WILL GO TO
+            LEFT SIDE</b>
+    </div>
+    <div class="mx-auto my-5 px-0 py-0 px-md-5 py-md-5 div2">
+        <b>
+            <i>
+                THE PADDING ON THE ALL SIDE OF THE CONTAINER WILL BE 0 IN SMALL SCREEN AND ON LARGE AND MIDDLE SCREEN
+                THE PADDING WILL APPEAR
+            </i>
+        </b>
+    </div>
+
+
+    <!-- breakpoints in position  -->
+    <div class="position-relative border border-1 border-dark mx-auto" style="width: 50vw; height: 50vh;">
+        <div class="position-absolute top-50 start-50 border border-1 border-danger">HELLO</div>
+    </div>
+    <!-- as per chatgpt and google breakpoints in position is not possible!  -->
+
+
+    <!-- breakpoint in display  -->
+    <div class="nav d-flex justify-content-between">
+        <div class="left h3 bg-primary">logo</div>
+        <div class="middle bg-secondary d-none d-md-flex flex-row">
+            <div class="m1 h3">about_us</div>
+            <div class="m2 h3">contact_us</div>
+            <div class="m3 h3">our_products</div>
+            <div class="m4 h3">our_services</div>
+        </div>
+        <div class="right h3 bg-info d-md-none">hamburger</div>
+    </div>
+    <div class="position-relative border border-1 border-dark mx-auto bg-warning" style="height: 50vh; width: 50vw;">
+        <div class="h1 position-absolute border border-1 border-danger d-block d-sm-none">
+            THIS IS THE SMALLEST DEVICE
+        </div>
+        <div class="h1 position-absolute border border-1 border-danger d-none d-sm-block d-md-none">
+            THIS IS THE MOBILE DEVICE
+        </div>
+        <div class="h1 position-absolute border border-1 border-danger d-none d-md-block d-lg-none">
+            THIS IS THE TABLE
+        </div>
+        <div class="h1 position-absolute border border-1 border-danger d-none d-lg-block">
+            THIS IS THE LAPTOP OR DESKTOP
+        </div>
+    </div>
+
+    <!-- container and container-fluid  -->
+    <div class="container bg-secondary px-5 py-5" style="width: 70vw;height: 20vh;">THIS IS THE CONTAINER with 70% width
+        <div class="container-fluid bg-danger px-5 py-5"> THIS IS THE CONTAINER FLUID</div>
+    </div>
+    <br><br><br>
+    <div class="container bg-secondary px-5 py-5">THIS IS THE CONTAINER without any measurment
+        <div class="container-fluid bg-danger px-5 py-5"> THIS IS THE CONTAINER FLUID</div>
+    </div>
+
+    
+
+    <div class="border border-1 border-danger bg-secondary d-md-flex d-block flex-wrap" style="height: 500px; width: 650px;">
+        <div class="items item1 bg-info border h1" style="height: 100px;width: 300px;">item1</div>
+        <div class="items item2 bg-info border h1" style="height: 100px;width: 300px;">item2</div>
+        <div class="items item3 bg-info border h1" style="height: 100px;width: 300px;">item3</div>
+        <div class="items item4 bg-info border h1" style="height: 100px;width: 300px;">item4</div>
+        <div class="items item5 bg-info border h1" style="height: 100px;width: 300px;">item5</div>
+    </div>
+
+    <div>
+        <h1>DONE >>> RITANKAR</h1>
+    </div>
+</body>
+
+</html>
