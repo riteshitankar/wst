@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- forms  -->
+
+    <div class="container-fluid">
+        <div class="container">
+            <form action="ind1.html " class="container">
+
+
+                <div class="d-flex gap-2 form-control">
+                    <label class="form-label" for="fn">FIRSTNAME</label>
+                    <input class="form-control" type="text" id="fn">
+                    <label class="form-label" for="sn">SIRNAME</label>
+                    <input class="form-control" type="text" placeholder="lastname"
+                        aria-label="Here you have to put your last name" id="sn">
+                    <!-- aria-label is for screen reader -->
+                </div>
+
+                <div class="d-flex gap-2 form-control">
+                    <label for="iemail" class="form-label">EMAIL </label>
+                    <input type="email" id="iemail" class="form-control">
+                </div>
+
+                <div class="d-flex gap-2 form-control">
+                    <label for="iselect" class="form-label">SELECT BRAND</label>
+                    <select name="" id="iselect" class="form-select">
+                        <option value="">DELL</option>
+                        <option value="">HP</option>
+                        <option value="">ACER</option>
+                        <option value="">ASUS</option>
+                        <option value="" selected>LENEVO</option>
+
+                    </select>
+                </div>
+                <div class="d-flex gap-2 form-control">
+                    <input type="checkbox" id="icheck" class="form-check-input">
+                    <label for="icheck" class="form-check-label">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptate expedita quia veniam
+                        cumque architecto consequatur adipisci tempore aspernatur velit!
+                    </label>
+                </div>
+
+
+
+
+                <div class="d-flex gap-2 form-control">
+                    <button type="submit" class="btn btn-danger">RESET</button>
+                    <button type="submit" class="btn btn-success">SUBMIT</button>
+                </div>
+
+                <div class="form-control">
+                    <div class="row flex-nowrap">
+                        <label for="sname" class="form-label col-3">FIRSTNAME</label>
+                        <input type="text" id="sname" class="form-control w-75">
+                    </div>
+                    <div class="row flex-nowrap">
+                        <label for="mname" class="form-label col-3">MIDDLENAME</label>
+                        <input type="text" id="mname" class="form-control w-75">
+                    </div>
+                    <div class="row flex-nowrap">
+                        <label for="lname" class="form-label col-3">LASTNAME</label>
+                        <input type="text" id="lname" class="form-control w-75">
+                    </div>
+                    <div class="row flex-nowrap">
+                        <label for="lage" class="form-label col-3">AGE</label>
+                        <input type="number" id="lage" class="form-control w-75">
+                    </div>
+                </div>
+
+
+                <div class="row gap-2 ">
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="state">
+                    </div>
+                    <div class="col">
+                        <input type="text" name="" id="" placeholder="city" class="form-control">
+                    </div>
+                    <div class="col">
+                        <input type="number" name="" id="" placeholder="zip" class="form-control">
+                    </div>
+
+                </div>
+                <div class="form-control d-flex gap-2">
+                    <label for="" id="rad" class="label-form">GENDER</label>
+                    <input type="radio" name="gender" id="MALE" class="form-control form-check-input">
+                    <label for="MALE" class="label-form">MALE</label>
+
+                    <input type="radio" name="gender" id="FEMALE" class="form-control form-check-input">
+                    <label for="FEMALE" class="label-form">FEMALE</label>
+
+                    <input type="radio" name="gender" id="RATHER NOT SAY"
+                        class="form-control form-check-input disabled">
+                    <label for="RATHER NOT SAY" class="label-form "> RATHER NOT SAY</label>
+
+                </div>
+
+                <div class="input-group">
+                    <div class="input-group-text">@</div>
+                    <input type="text" class="form-control" id="" placeholder="Username">
+                </div>
+
+
+        </div>
+
+        </form>
+    </div>
+    </div>
+    <div>
+        <h1>DONE >>> RITANKAR</h1>
+    </div>
+
+</body>
+
+</html>
