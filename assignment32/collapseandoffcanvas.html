@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collpase</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container border border-1">
+            <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#target1">
+                CLICK ME TO OPEN COLLAPSE
+            </button>
+            <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#target1">
+                CLICK ME TO CLOSE THE COLLAPSE
+            </button>
+
+        </div>
+    </div>
+    <div class="collapse collapse-horizontal text-danger" style="width: 500px; height: 500px;" id="target1">
+        <p> <h1>horizontal collapsing</h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non saepe adipisci alias sunt, magnam 
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet consequuntur totam reprehenderit voluptate repellendus ab est id numquam ipsa inventore eum debitis earum iusto veniam laudantium suscipit dolum dolore esse magni necessitatibus, dignissimos delectus. A ad, ducimus sunt assumenda voluptate ipsam ut officia laborum animi nobis minima blanditiis, nesciunt magni eum error modi odio rem voluptates incidunt repellat reiciendis ex saepe? Quos, unde inventore consectetur harum eius minus sit modi nam aspernatur fuga adipisci autem numquam ratione libero tenetur. Qui dolorum fugiat ut, quas, earum voluptatibus, pariatur perspiciatis inventore quis delectus dolores eum asperiores libero atque eveniet sed vel ab.
+
+        </p>
+    
+    </div>
+
+
+
+
+    <!-- comparision of both collapse and offcanvas -->
+
+
+    <div class="container-fluid">
+        <div class="container border border-1 border-warning m-5 p-5">
+            <button data-bs-toggle="collapse" data-bs-target="#target2">open</button>
+        </div>
+        <div class="collapse collapse-vertical" id="target2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum animi officia necessitatibus enim libero excepturi quisquam, quaerat natus perspiciatis dolore repellendus accusamus atque. Ab ut repellat odit ducimus quod quisquam quo hic reprehenderit labore possimus, minima architecto. Quisquam, pariatur minus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum animi officia necessitatibus enim libero excepturi quisquam, quaerat natus perspiciatis dolore repellendus accusamus atque. Ab ut repellat odit ducimus quod quisquam quo hic reprehenderit labore possimus, minima architecto. Quisquam, pariatur minus.
+            
+            <!-- <button data-bs-dismiss="collapse"> close</button> -->
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container border border-2 border-secondary m-5 p-5">
+            <button data-bs-toggle="offcanvas" data-bs-target="#ofcan">open offcanvas</button>
+        </div>
+        <div class="offcanvas offcanvas-end" id="ofcan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum animi officia necessitatibus enim libero excepturi quisquam, quaerat natus perspiciatis dolore repellendus accusamus atque. Ab ut repellat odit ducimus quod quisquam quo hic reprehenderit labore possimus, minima architecto. Quisquam, pariatur minus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum animi officia necessitatibus enim libero excepturi quisquam, quaerat natus perspiciatis dolore repellendus accusamus atque. Ab ut repellat odit ducimus quod quisquam quo hic reprehenderit labore possimus, minima architecto. Quisquam, pariatur minus.
+           
+            <button data-bs-dismiss="offcanvas"> close</button>
+        </div>
+    </div>
+
+    <div>
+        <h1>
+            DONE >>> RITANKAR
+        </h1>
+    </div>
+
+</body>
+</html>
