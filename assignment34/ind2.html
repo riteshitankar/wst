@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        :root {
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="dropdown">
+                <button class="btn border border-1" data-bs-toggle="dropdown">cars</button>
+                <ol class="dropdown-menu">
+                    <li>
+                        <a href="#" class="dropdown-item">VW</a>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-item">MS</a>
+                    </li><li>
+                        <a href="#" class="dropdown-item">TAT</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container mx-auto">
+            <!-- dropdown -->
+            basic
+            <div class="dropdown">
+                <button class="btn border border-1" data-bs-toggle="dropdown">dropdown</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                </ul>
+            </div>
+
+            dropdown-toggle
+            <div class="dropdown">
+                <button class="btn border border-1 dropdown-toggle" data-bs-toggle="dropdown">dropdown</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                </ul>
+            </div>
+
+            color
+            <div class="dropdown">
+                <button class="btn dropdown-toggle btn-danger" data-bs-toggle="dropdown">dropdown</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                </ul>
+            </div>
+
+            split dropdown
+            <div class="dropdown">
+                <div class="btn-group">
+                    <button class="btn btn-danger">dropdown</button>
+                    <button class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown"></button>
+
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+            large size
+            <div class="dropdown">
+                <button class="btn dropdown-toggle btn-lg btn-danger" data-bs-toggle="dropdown">dropdown</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            small size
+            <div class="dropdown">
+                <button class="btn dropdown-toggle btn-sm btn-danger" data-bs-toggle="dropdown">dropdown</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                </ul>
+            </div>
+
+            button and drop color
+            <div class="dropdown">
+                <button class="btn dropdown-toggle btn-dark" data-bs-toggle="dropdown">dropdown</button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                </ul>
+            </div>
+
+            centered dropdown
+            <div class="dropdown-center">
+                <button class="btn dropdown-toggle border border-1" data-bs-toggle="dropdown">dropdown</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                </ul>
+            </div>
+
+            dropup
+            <div class="dropup">
+                <button class="btn dropdown-toggle border border-1  mx-auto" data-bs-toggle="dropdown">dropdown</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                </ul>
+            </div>
+
+            end
+            <div class="dropend">
+                <button class="btn dropdown-toggle border border-1  mx-auto" data-bs-toggle="dropdown">dropdown</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                </ul>
+            </div>
+
+            disabled | active
+            <div class="dropend">
+                <button class="btn dropdown-toggle border border-1  mx-auto" data-bs-toggle="dropdown">dropdown</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item disabled">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item active">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum dolor sit amet consectetur.</a>
+                    </li>
+                </ul>
+            </div>
+
+            dropdown-menu-start
+            <div class="dropdown">
+                <button class="btn border border-1 dropdown-toggle" data-bs-toggle="dropdown">dropdown dropdown dropdown
+                    dropdown</button>
+                <ul class="dropdown-menu dropdown-menu-start">
+                    <li><a href="#" class="dropdown-item">Lorem ipsum</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum</a>
+                    </li>
+                </ul>
+            </div>
+
+            dropdown-menu-end
+            <div class="dropdown">
+                <button class="btn border border-1 dropdown-toggle" data-bs-toggle="dropdown">dropdown dropdown dropdown
+                    dropdown</button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a href="#" class="dropdown-item">Lorem ipsum</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Lorem ipsum</a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            collapsable form
+            <div class="dropdown">
+                <button class="btn dropdown-toggle border border-1" data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside">click to open a
+                    form</button>
+
+                <div class="bg-light px-4 dropdown-menu border border-1" style="height: 500px;width: 500px; ">
+                    <h1>registration page</h1>
+                    <br><br><br>
+                    <div class="d-flex gap-3">
+                        <label for="un" class="label-form">
+                            USERNAME
+                        </label>
+                        
+                        <input type="text" placeholder="@username" class="form-control ms-none">
+                    </div>
+                    <br><br><br>
+                    <div class="d-flex gap-3">
+                        <label for="un" class="label-form">
+                            PASSWORD
+                        </label>
+                        <input type="text" placeholder="ENTER THE PASSWORD" class="form-control">
+                    </div>
+                    <br><br><br>
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-success" type="submit">
+                            SUBMIT
+                        </button>
+                        <button class="btn btn-danger" type="reset">
+                            RESET
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <h1>true : default behavious</h1>
+            <div class="dropdown">
+                <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="true">default</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item"> 1 </a></li>
+                    <li><a href="#" class="dropdown-item"> 2 </a></li>
+                    <li><a href="#" class="dropdown-item"> 3 </a></li>
+                    <li><a href="#" class="dropdown-item"> 4 </a></li>
+                    <li><a href="#" class="dropdown-item"> 5 </a></li>
+                </ul>
+            </div>
+
+            <h1>false : only can close manually; close only when click to drop down</h1>
+            <div class="dropdown">
+                <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown"
+                data-bs-auto-close="false">default</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item"> 1</a></li>
+                    <li><a href="#" class="dropdown-item"> 2</a></li>
+                    <li><a href="#" class="dropdown-item"> 3</a></li>
+                    <li><a href="#" class="dropdown-item"> 4</a></li>
+                    <li><a href="#" class="dropdown-item"> 5</a></li>
+                </ul>
+            </div>
+
+            <h1>inside : only close when click inside</h1>
+            <div class="dropdown">
+                <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown"
+                data-bs-auto-close="inside">default</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item"> 1</a></li>
+                    <li><a href="#" class="dropdown-item"> 2</a></li>
+                    <li><a href="#" class="dropdown-item"> 3</a></li>
+                    <li><a href="#" class="dropdown-item"> 4</a></li>
+                    <li><a href="#" class="dropdown-item"> 5</a></li>
+                </ul>
+            </div>
+            <h1>outside : only close when click to outside</h1>
+            <div class="dropdown">
+                <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown"
+                data-bs-auto-close="outside">default</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item"> 1</a></li>
+                    <li><a href="#" class="dropdown-item"> 2</a></li>
+                    <li><a href="#" class="dropdown-item"> 3</a></li>
+                    <li><a href="#" class="dropdown-item"> 4</a></li>
+                    <li><a href="#" class="dropdown-item"> 5</a></li>
+                </ul>
+            </div>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+
+        </div>
+    </div>
+
+    <div>
+        <h1>
+            DONE >>> RITANKAR
+        </h1>
+    </div>
+
+
+
+</body>
+
+</html>
