@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accordian</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <!-- ACCORDIAN  -->
+
+
+
+    <!-- normal accordion  -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="accordion" id="acc1">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                            ACCORDION TITLE 1
+                        </div>
+                    </div>
+                    <div id="collapse1" class="collapse" data-bs-present="#acc1">
+                        <div class="accordion-body">
+                            <strong>Lorem ipsum dolor sit amet.</strong>Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Aspernatur rerum obcaecati incidunt reiciendis autem fugiat esse placeat
+                            dicta, vero necessitatibus, rem adipisci animi ipsa eos!
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion" id="acc2">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-button" data-bs-toggle="collapse" data-bs-target="#target2">
+                            DESCRIPTION ABOUT IPC 2000
+                        </div>
+                    </div>
+                    <div id="target2" class="collapse show" data-bs-present="#acc2">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt alias sunt dolorum
+                            voluptatum tempora corrupti molestiae sequi exercitationem, quia fugiat libero laborum
+                            ducimus ipsam velit dolore excepturi quaerat maxime repudiandae eos accusamus est cum a
+                            necessitatibus maiores? Ipsa sequi ducimus ad quos molestiae natus error veniam adipisci ex
+                            deleniti. Nostrum!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <hr>
+
+
+
+    <!-- group of accordions  -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="accordion" id="example">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse-1">
+                            Desciption about Yashwantrao Chauhan
+                        </div>
+                    </div>
+                    <div id="collapse-1" class="collapse" data-bs-parent="#example">
+                        <div class="accordion-body">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni pariatur deserunt quo quia
+                            accusamus sequi eos perspiciatis fugit, assumenda dolores iure a omnis quisquam animi libero
+                            repellendus facilis quibusdam quas. Laboriosam quaerat libero cupiditate eum facere ratione,
+                            rem voluptatum doloremque ullam quod repellendus fugiat non labore! Velit molestias iure
+                            tempore.
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse-2">
+                            Description about AnnaBhau Sathe
+                        </div>
+                    </div>
+                    <div id="collapse-2" class="collapse show" data-bs-parent="#example">
+                        <div class="accordion-body bg-warning">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, temporibus dolorum impedit
+                            hic neque magni eveniet error totam iste possimus, sunt perferendis optio assumenda enim
+                            tempora. Repudiandae sed, ullam veniam aliquam dignissimos nisi obcaecati, vero delectus
+                            vitae animi voluptatum itaque non doloremque sapiente nam, velit praesentium est dolore eum
+                            voluptate.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse-3">
+                            Description about Amravati
+                        </div>
+                    </div>
+                    <div id="collapse-3" class="collapse" data-bs-parent="#example">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum vitae quaerat laboriosam
+                            veritatis. Ex, amet voluptate debitis autem enim, porro nemo voluptatibus beatae ullam iste
+                            saepe deserunt officia possimus nobis sed laudantium ipsum reiciendis nam excepturi aut
+                            aliquid, quidem natus fuga. Minus accusamus, voluptate impedit id expedita doloremque
+                            voluptatem distinctio?
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="accordion-item">
+                    <div class="accordion header">
+                        <div class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse-4">
+                            Description about Nagpur
+                        </div>
+                    </div>
+                    <div class="collapse text-bg-dark" id="collapse-4" data-bs-parent="#example">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio ea enim sit odit nam
+                            saepe assumenda architecto quidem aliquam, sequi ex ipsam asperiores ducimus quae
+                            repellendus quas placeat voluptates molestiae necessitatibus explicabo. Temporibus molestiae
+                            voluptatum dolore nam. Dignissimos dolore nobis rem dicta libero quo, maiores ipsum optio,
+                            architecto voluptatibus mollitia doloribus tenetur! Quam, doloremque id? Quia quas
+                            architecto eaque perspiciatis.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <hr>
+
+
+
+    <!-- accordion flush is used to remove all the border type area  -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="accordion accordion-flush" id="example2">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-button collapsed text-bg-primary" data-bs-target="#coll1" data-bs-toggle="collapse">
+                            Description about India
+                        </div>
+                    </div>
+                    <div class="collapse" id="coll1" data-bs-parent="#example2">
+                        <div class="text-bg-dark accordion-body">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus qui saepe, harum maiores
+                            optio architecto vero quam provident quaerat est a porro nesciunt ipsum natus illum delectus
+                            deserunt accusantium eius quasi mollitia dolorem sunt ducimus iusto! Vitae vero possimus ea
+                            et nam non! Harum praesentium dolorum, libero at commodi officia!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="text-bg-primary accordion-button collapsed" data-bs-target="#coll2" data-bs-toggle="collapse">
+                            Description about Iran
+                        </div>
+                    </div>
+                    <div class="collapse" id="coll2" data-bs-parent="#example2">
+                        <div class="accordion-body text-bg-dark">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus qui saepe, harum maiores
+                            optio architecto vero quam provident quaerat est a porro nesciunt ipsum natus illum delectus
+                            deserunt accusantium eius quasi mollitia dolorem sunt ducimus iusto! Vitae vero possimus ea
+                            et nam non! Harum praesentium dolorum, libero at commodi officia!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="text-bg-primary accordion-button collapsed" data-bs-target="#coll3" data-bs-toggle="collapse">
+                            Description about Iraq
+                        </div>
+                    </div>
+                    <div class="collapse" id="coll3" data-bs-parent="#example2">
+                        <div class="accordion-body text-bg-dark ">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus qui saepe, harum maiores
+                            optio architecto vero quam provident quaerat est a porro nesciunt ipsum natus illum delectus
+                            deserunt accusantium eius quasi mollitia dolorem sunt ducimus iusto! Vitae vero possimus ea
+                            et nam non! Harum praesentium dolorum, libero at commodi officia!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="accordion-button collapsed text-bg-primary" data-bs-target="#coll4" data-bs-toggle="collapse">
+                            Description about Indonesia
+                        </div>
+                    </div>
+                    <div class="collapse" id="coll4" data-bs-parent="#example2">
+                        <div class="text-bg-dark accordion-body">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus qui saepe, harum maiores
+                            optio architecto vero quam provident quaerat est a porro nesciunt ipsum natus illum delectus
+                            deserunt accusantium eius quasi mollitia dolorem sunt ducimus iusto! Vitae vero possimus ea
+                            et nam non! Harum praesentium dolorum, libero at commodi officia!
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1>
+            DONE >>> RITANKAR
+        </h1>
+    </div>
+
+</body>
+
+</html>
