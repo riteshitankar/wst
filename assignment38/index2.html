@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav-tabs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .cont-size {
+            height: 200px;
+            border: 5px solid black;
+            overflow-y: auto;
+        }
+        #nav2 .nav-link.active{
+            /* border: 2px solid red; */
+            background-color: black;
+            color: white;
+           font-weight: 800;
+        }
+        .nav-link{
+            color: black;
+        }
+        
+        
+    </style>
+
+<body>
+
+
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="navbar navbar-expand" id="nav1">
+                <ul class="nav nav-pills ">
+                    <li class="nav-item">
+                        <a href="#home4" class="nav-link active" data-bs-toggle="scroll">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#aboutus4" class="nav-link" data-bs-toggle="scroll">aboutus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact4" class="nav-link" data-bs-toggle="scroll">contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services4" class="nav-link" data-bs-toggle="scroll">services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container tab-content cont-size" data-bs-spy="scroll" data-bs-target="#nav1">
+            <div class="section text-bg-dark" id="home4">
+                <h1>This is a home tab</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat fugit provident rem. Quas quod
+                    distinctio aliquid natus maxime voluptatibus quam. Nihil enim maiores cumque natus ut, magnam nam
+                    quae? Amet ab dolorum, veritatis harum, laboriosam facilis aspernatur adipisci quas molestiae a
+                    exercitationem. Ullam quos exercitationem odit! Recusandae quos placeat veniam labore praesentium
+                    officia a dignissimos necessitatibus soluta vitae ipsa, voluptate quae ipsum unde obcaecati. Esse
+                    fugiat a sunt eius ut? Dicta ad voluptate praesentium quae quis cum ducimus dolorum rerum, beatae
+                    cumque distinctio! Dicta voluptate maxime sed aliquid enim fuga aut molestiae qui, maiores quos
+                    incidunt atque, non est et?</p>
+            </div>
+            <div class="section text-bg-danger" id="aboutus4">
+                <h1>This is an about us tab</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat fugit provident rem. Quas quod
+                    distinctio aliquid natus maxime voluptatibus quam. Nihil enim maiores cumque natus ut, magnam nam
+                    quae? Amet ab dolorum, veritatis harum, laboriosam facilis aspernatur adipisci quas molestiae a
+                    exercitationem. Ullam quos exercitationem odit! Recusandae quos placeat veniam labore praesentium
+                    officia a dignissimos necessitatibus soluta vitae ipsa, voluptate quae ipsum unde obcaecati. Esse
+                    fugiat a sunt eius ut? Dicta ad voluptate praesentium quae quis cum ducimus dolorum rerum, beatae
+                    cumque distinctio! Dicta voluptate maxime sed aliquid enim fuga aut molestiae qui, maiores quos
+                    incidunt atque, non est et?</p>
+            </div>
+            <div class="section text-bg-warning" id="contact4">
+                <h1>This is a contact tab</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat fugit provident rem. Quas quod
+                    distinctio aliquid natus maxime voluptatibus quam. Nihil enim maiores cumque natus ut, magnam nam
+                    quae? Amet ab dolorum, veritatis harum, laboriosam facilis aspernatur adipisci quas molestiae a
+                    exercitationem. Ullam quos exercitationem odit! Recusandae quos placeat veniam labore praesentium
+                    officia a dignissimos necessitatibus soluta vitae ipsa, voluptate quae ipsum unde obcaecati. Esse
+                    fugiat a sunt eius ut? Dicta ad voluptate praesentium quae quis cum ducimus dolorum rerum, beatae
+                    cumque distinctio! Dicta voluptate maxime sed aliquid enim fuga aut molestiae qui, maiores quos
+                    incidunt atque, non est et?</p>
+            </div>
+            <div class="section text-bg-success" id="services4">
+                <h1>This is a services tab</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat fugit provident rem. Quas quod
+                    distinctio aliquid natus maxime voluptatibus quam. Nihil enim maiores cumque natus ut, magnam nam
+                    quae? Amet ab dolorum, veritatis harum, laboriosam facilis aspernatur adipisci quas molestiae a
+                    exercitationem. Ullam quos exercitationem odit! Recusandae quos placeat veniam labore praesentium
+                    officia a dignissimos necessitatibus soluta vitae ipsa, voluptate quae ipsum unde obcaecati. Esse
+                    fugiat a sunt eius ut? Dicta ad voluptate praesentium quae quis cum ducimus dolorum rerum, beatae
+                    cumque distinctio! Dicta voluptate maxime sed aliquid enim fuga aut molestiae qui, maiores quos
+                    incidunt atque, non est et?</p>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container-fluid border border-4 border-danger">
+        <div class="row">
+            <div class="col-4">
+                <div class="container">
+                    <div class="navbar navbar-expand" id="nav2">
+                        <ul class="nav nav-pills d-flex flex-column">
+                            <li class="nav-item">
+                                <a href="#home5" class="nav-link active" data-bs-toggle="scroll">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#aboutus5" class="nav-link" data-bs-toggle="scroll">aboutus</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact5" class="nav-link" data-bs-toggle="scroll">contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#services5" class="nav-link" data-bs-toggle="scroll">services</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="container tab-content cont-size" data-bs-spy="scroll" data-bs-target="#nav2">
+                    <div class="section text-bg-dark" id="home5">
+                        <h1>This is a home tab</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat fugit provident rem. Quas
+                            quod
+                            distinctio aliquid natus maxime voluptatibus quam. Nihil enim maiores cumque natus ut,
+                            magnam nam
+                            quae? Amet ab dolorum, veritatis harum, laboriosam facilis aspernatur adipisci quas
+                            molestiae a
+                            exercitationem. Ullam quos exercitationem odit! Recusandae quos placeat veniam labore
+                            praesentium
+                            officia a dignissimos necessitatibus soluta vitae ipsa, voluptate quae ipsum unde obcaecati.
+                            Esse
+                            fugiat a sunt eius ut? Dicta ad voluptate praesentium quae quis cum ducimus dolorum rerum,
+                            beatae
+                            cumque distinctio! Dicta voluptate maxime sed aliquid enim fuga aut molestiae qui, maiores
+                            quos
+                            incidunt atque, non est et?</p>
+                    </div>
+                    <div class="section text-bg-danger" id="aboutus5">
+                        <h1>This is an about us tab</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat fugit provident rem. Quas
+                            quod
+                            distinctio aliquid natus maxime voluptatibus quam. Nihil enim maiores cumque natus ut,
+                            magnam nam
+                            quae? Amet ab dolorum, veritatis harum, laboriosam facilis aspernatur adipisci quas
+                            molestiae a
+                            exercitationem. Ullam quos exercitationem odit! Recusandae quos placeat veniam labore
+                            praesentium
+                            officia a dignissimos necessitatibus soluta vitae ipsa, voluptate quae ipsum unde obcaecati.
+                            Esse
+                            fugiat a sunt eius ut? Dicta ad voluptate praesentium quae quis cum ducimus dolorum rerum,
+                            beatae
+                            cumque distinctio! Dicta voluptate maxime sed aliquid enim fuga aut molestiae qui, maiores
+                            quos
+                            incidunt atque, non est et?</p>
+                    </div>
+                    <div class="section text-bg-warning" id="contact5">
+                        <h1>This is a contact tab</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat fugit provident rem. Quas
+                            quod
+                            distinctio aliquid natus maxime voluptatibus quam. Nihil enim maiores cumque natus ut,
+                            magnam nam
+                            quae? Amet ab dolorum, veritatis harum, laboriosam facilis aspernatur adipisci quas
+                            molestiae a
+                            exercitationem. Ullam quos exercitationem odit! Recusandae quos placeat veniam labore
+                            praesentium
+                            officia a dignissimos necessitatibus soluta vitae ipsa, voluptate quae ipsum unde obcaecati.
+                            Esse
+                            fugiat a sunt eius ut? Dicta ad voluptate praesentium quae quis cum ducimus dolorum rerum,
+                            beatae
+                            cumque distinctio! Dicta voluptate maxime sed aliquid enim fuga aut molestiae qui, maiores
+                            quos
+                            incidunt atque, non est et?</p>
+                    </div>
+                    <div class="section text-bg-success" id="services5">
+                        <h1>This is a services tab</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat fugit provident rem. Quas
+                            quod
+                            distinctio aliquid natus maxime voluptatibus quam. Nihil enim maiores cumque natus ut,
+                            magnam nam
+                            quae? Amet ab dolorum, veritatis harum, laboriosam facilis aspernatur adipisci quas
+                            molestiae a
+                            exercitationem. Ullam quos exercitationem odit! Recusandae quos placeat veniam labore
+                            praesentium
+                            officia a dignissimos necessitatibus soluta vitae ipsa, voluptate quae ipsum unde obcaecati.
+                            Esse
+                            fugiat a sunt eius ut? Dicta ad voluptate praesentium quae quis cum ducimus dolorum rerum,
+                            beatae
+                            cumque distinctio! Dicta voluptate maxime sed aliquid enim fuga aut molestiae qui, maiores
+                            quos
+                            incidunt atque, non est et?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
