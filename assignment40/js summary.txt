@@ -1,0 +1,24 @@
+- One of the most popular and most commonly used programming language which is used websites. Used for frondend dev, backend dev, mobile app development, desktop app development, game development.
+- Visual Studio Code, Discord, Facebook, Atom text editor, Microsoft teams, web.whatsapp are the product of Javascript 
+- It is totally different from JAVA
+
+
+- Netscape is a web broswer that was launched in 1993-1994 first browser that was accessible to general public
+- The founder of Netscape Marc Andreessen developed a programming language for his Netscape web browser with the help of Brendan Eich for making a calculation on user machine to save the time. 
+- Brendan wrote a js in 10 days which was initially called as Mocha then LiveScript and then Javascript.
+-  Atwood founder of stackoverflow : any application that can be written in javascript, will eventually be written in javascript.
+
+
+- After some period of time internet explorer introduce JScript in their browser by using reverse engineering, that offers more features as compare to Netscape.
+- Netscape then approach ecma(european computer manufacturers orginazation) for the standarization of Javascript.
+- After ecma introduced a better version and features in javascript as a standared internet explorer agree to use javascript in their browser.
+
+- Till the current data all the browser using ECMA script as a standard guideline.
+- In 2008, chrome introduced to jam the market of browser and they introduce a v8 engine for faster execution of js.
+- Other browser eventually optimized themselves for javascript execution and introduced their own javascript engine to run ecma script.
+
+- Ryan Dahl then create nodejs to run the javascript on local server which was inspired from chrome v8 engine. 
+- Different frameworks of js angularjs, reactjs.
+
+  
+- JS is a interpreted language as it runs a code line by line.
