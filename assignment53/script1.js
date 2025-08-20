@@ -56,3 +56,33 @@ console.log(for_factorial(10));
 
 
 // done >> ritankar
+
+
+function repeat_line(n) {
+    for (let index = 0; index <= n; index++) {
+        console.log(`${index} THIS IS THE FIRST LINE`);
+    }
+
+    let value1 = 2;
+    let value2 = 1;
+    do {
+        console.log(`${value1} x ${value2} =>> ${value1 * value2}`);
+        value2++;
+    }
+    while (value2 < 11);
+}
+
+repeat_line(20)
+
+
+function table(n){
+    console.log(`I am going to print the table from ${1} to ${n}`)
+    for(let i = 1; i <= n; i++){
+        console.log(`The table of ${i} is given below: `)
+        for(let j = 1; j<11; j++ ){
+            console.log(`${i} x ${j} =>> ${i*j}`)
+        }
+    }
+}
+
+table(60);
