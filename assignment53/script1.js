@@ -75,14 +75,27 @@ function repeat_line(n) {
 repeat_line(20)
 
 
-function table(n){
+function table(n) {
     console.log(`I am going to print the table from ${1} to ${n}`)
-    for(let i = 1; i <= n; i++){
+    for (let i = 1; i <= n; i++) {
         console.log(`The table of ${i} is given below: `)
-        for(let j = 1; j<11; j++ ){
-            console.log(`${i} x ${j} =>> ${i*j}`)
+        for (let j = 1; j < 11; j++) {
+            console.log(`${i} x ${j} =>> ${i * j}`)
         }
     }
 }
 
-table(60);
+table(400);
+
+
+
+
+
+function fun1(jj){
+    console.log(`I am goint to print table of ${jj} :`);
+    for (let j = 1; j < 11; j++) {
+        console.log(`${jj} x  ${j} = ${j * jj}`);
+    }
+}
+
+fun1(75555);
