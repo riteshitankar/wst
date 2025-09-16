@@ -1,0 +1,22 @@
+{
+  "name": "first_package",
+  "version": "1.0.0",
+  "description": "This is the first-package that i am going to create and here i am using server1.js as a main file. That's the description only.",
+  "main": "server1.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node server1.js"
+  },
+  "keywords": [
+    "first",
+    "package",
+    "npm"
+  ],
+  "author": "ritesh laxman itankar",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "express": "^5.1.0"
+  }
+}
