@@ -1,4 +1,7 @@
 import express from 'express'
+
+
+
 let app = express();
 let port = 7000;
 app.get("/", (request, response) => {
@@ -11,7 +14,7 @@ app.get("/", (request, response) => {
     <title>Document</title>
 </head>
 <body style="background-color: bisque;">
-    <h1 style="color:green">WELCOME TO MY NODE SERVER 1, काही चाय पाणी घ्यान का राव, की आज जेवनच करून जायचं विचार आहे! #ritankar</h1>
+    <h1 style="color:orangered">WELCOME TO MY NODE SERVER 1, काही चाय पाणी घ्यान का राव, की आज जेवनच करून जायचं विचार आहे! #ritankar</h1>
     <form action="">
         <input type="text" placeholder="Enter Your First Name">
         <br>

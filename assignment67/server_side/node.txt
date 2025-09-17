@@ -1,0 +1,51 @@
+node -v 
+for the checking node version
+
+npm -v
+for checking node package manager
+		in search express and react
+		check for yarn, yaml
+
+
+6. node-express-mongodb folder
+doesn't works for browser object model, document object model and 
+node js is a runtime environment which runs javascript locally into our system
+
+
+localhost:port(here virtual port) :: 127.0.0.1:5500
+ 
+
+npm init -y
+
+main should be server.js
+type should be module
+
+npm install bootstrap@latest
+npm install express@latest
+	package-lock.json stores all the metadata and description
+
+
+npm uninstall bootstrap
+
+in server.js
+import express from express
+let app = express();
+let port = 7000;
+app.get("/",(request, response)=>{
+	response.send("welcome to our node server");
+})
+
+app.listen(port,()=>{})
+console.log('server is running on port ${port}')
+
+})
+
+
+
+
+>> node server.js
+
+
+
+find https status code and https method???
+

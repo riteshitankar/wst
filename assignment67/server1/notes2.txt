@@ -1,0 +1,6 @@
+npm install -g nodemon
+
+nodemon script1.js
+
+
+git init

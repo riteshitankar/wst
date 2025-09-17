@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "name": "server1",
+  "version": "1.0.0",
+  "description": "This is the day 2 of learning of my npm and node. So that, I have created a server 1 on the 16-09-2025. Here our activity is to import multiple js files in the js server...",
+  "main": "server1.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node server1.js"
+
+  },
+  "keywords": [
+    "server1",
+    "firstserver"
+  ],
+  "author": "ritesh laxman itankar",
+  "license": "ISC"
+}
