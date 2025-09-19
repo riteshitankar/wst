@@ -1,0 +1,19 @@
+{
+  "name": "server4",
+  "version": "1.0.0",
+  "description": "This is the my server number 4, where i am exactly going to learn how to add the development files like .html .css .js file s we can link using contollers also the difference between the .ejs and .html in the perpective of the index and about",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
