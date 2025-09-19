@@ -1,0 +1,13 @@
+firstly we are directly running our server file
+after that we are able to run our another script files on the server by importing it into the server
+
+now after that we have request a port from config.env because we want to hide it from the the server.js
+
+
+after that we are using router files that must run on the server to display the data on the brower and the git bash
+
+
+after that we are using a control.js inside the controllers folder to send the data form the control.js to the router.js to display on the server.js
+
+
+

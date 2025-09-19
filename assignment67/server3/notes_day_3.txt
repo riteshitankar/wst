@@ -1,0 +1,151 @@
+server3 > controllers[controller.js], database, models, node_modules, routers[router.js], views[index.ejs], config.env, server.js
+
+>> npm i dotenv
+>> npm i nodemon
+>> nodemon server.js
+>> rs               ..........................forcefully server restart
+
+
+server.js
+
+import dotenv from 'dotenv'
+import dotenv from 'dotenv';
+import router from './routers/router.js'
+
+dotenv.config({path:"./config.env"})
+let port = process.env.PORT || 5555
+app.use(router)
+app.listen(port, () => {
+console.log('the port number is' , port)
+})
+
+
+
+
+
+
+
+config.env
+	PORT = 5656
+	
+
+
+
+
+
+
+
+
+router.js
+import express from 'express';
+let router = express.Router();
+
+router.get("/", (req,res) => }{
+	res.status(200).send('hello user')
+})
+
+
+router.get("/another-route", (req,res) => }{
+	res.status(200).send('hello user again')
+})
+
+export default router
+
+
+
+
+
+
+controller.js
+let getHome  = (req,res) => {
+	res.status(200).send('hello user ')
+}
+let GetAnotherRoute = (req,res) => {
+	res.status(200).send('hello user again')
+}
+export default router
+
+
+
+
+
+now for the router.js
+
+
+import express from 'express';
+let router = express.Router();
+
+router.get("/", getHome)
+
+
+router.get("/another-route", GetAnotherRoute)
+
+export default router
+
+
+
+
+
+
+
+you can sent to the user a json text and a file in the controller.js
+
+
+
+
+
+controller.js
+let data = [
+{name : 'ritesh' , city : 'nagpur'},{name : 'ritesh' , city : 'nagpur'},{name : 'ritesh' , city : 'nagpur'},{name : 'ritesh' , city : 'nagpur'}
+
+]
+let getHome  = (req,res) => {
+	res.status(200).send('hello user ')
+}
+let GetAnotherRoute = (req,res) => {
+	res.status(200).send('hello user again')
+}
+export default router
+
+
+
+
+res.send()
+res.sendfile()
+res.rendor()
+res.json()
+
+
+
+.gitignore env file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
