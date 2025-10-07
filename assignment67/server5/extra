@@ -1,0 +1,7 @@
+npm init
+    type : module
+    start : nodemon server.js
+
+npm install nodemon@latest
+npm install express@latest
+npm install ejs

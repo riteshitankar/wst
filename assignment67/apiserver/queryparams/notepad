@@ -1,0 +1,33 @@
+I want to create print my name and phone number using the link http://localhost:8005/home?name=ritesh&&phone=5164986165 using the thunderbold correct my code and guide me
+
+
+Server.js 
+import express from "express";
+import router from "./routers/router.js"
+
+let app = express();
+let port = 8002;
+
+app.get("/api",home)
+app.use(router);
+app.listen(port, ()=>{
+    console.log('You are on the port number',port)
+})
+
+
+
+
+router.js
+
+import express from "express";
+import {home} from '../controllers/control.js';
+
+let router = express.Router();
+
+router.get('/',home)
+
+export default router;
+
+
+
+contol.js

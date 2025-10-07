@@ -1,0 +1,24 @@
+{
+  "name": "server6",
+  "version": "1.0.0",
+  "description": "in the last server i have created a form that receives a data from the user and print it into the git bash using submit form post method and now here i am going to create a data and print it one by one",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "nodemon server.js"
+  },
+  "keywords": [
+    "sixth",
+    "table",
+    "fruitexample",
+    "server6"
+  ],
+  "author": "ritesh laxman itankar",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}

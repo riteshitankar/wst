@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/styles.css">
+</head>
+<body>
+    <h1>Hello, KING 👑 here .....</h1>
+    <table border='1'>
+        <tr>
+            <th>Fruit Name</th>
+            <th>Quantity</th>
+        </tr>
+        <% for(let i = 0; i<fruitlist.length; i++) { %>
+        <tr>
+            <td><%= fruitlist[i].name %></td>
+            <td><%= fruitlist[i].quantity %></td>
+        </tr>
+        <% } %>
+    </table>
+</body>
+</html>

@@ -1,0 +1,88 @@
+database[collection[file.txt],collection2[file1.txt, file2.txt]]
+
+mongodb server download (community)
+
+>> mongosh {shell should show for }
+
+CURD OPERATION
+create :  database, collection, document
+Read : database, collection, document
+Update : collection, document
+Delete : database, collection, document
+{
+    key1 : '11';
+}
+{
+    key1 : '11';
+    key2 : '22';
+    key3 : '33';
+}
+
+Ecommerce, IoT, horizontal, database
+
+
+mongodb compass
+mongodb atlas
+
+
+>> mongosh {shell should show for }
+
+test> use database_name {to create a database}
+>> show dbs {list the avaliable databases}
+>> cls {for clear}
+>> db.createCollection("students")      {create collection within the database}
+>> db.createCollection("batches")      {create collection within the database}
+>> show collections    {show avl collection}
+{bson is the document within the colelction }
+
+
+
+db.collection.insertOne()
+
+>> db.students.insertOne({name : 'student1', phone : 9455161665,status: true, subjects : ['maths','physics','chemistry']})
+
+db.collection.insertMany([])
+
+>> db.students.find({})
+
+
+We can assign id by ourself by using _id
+
+>> db.students.insertMany([
+    {_id:1, name :student1},
+    {_id:2, name :student2},
+    {_id:3, name :student3},
+    {_id:4, name :student4},
+    {_id:5, name :student5},
+    {_id:6, name :student6},
+    {_id:7, name :student7},
+])
+
+>> use languages
+> db.createCollection('techs')
+>> it {for read more}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
