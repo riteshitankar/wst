@@ -1,0 +1,9 @@
+.comp3 {
+    background-color: rgb(243, 74, 44);
+    color: whitesmoke;
+    &:hover {
+        background-color: darkblue;
+        color: rgb(243, 74, 44);
+        cursor: all-scroll;
+    }
+}
