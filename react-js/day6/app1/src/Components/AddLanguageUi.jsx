@@ -64,26 +64,7 @@ const AddLanguageUi = (props) => {
         }
     }
 
-    // check duplicate title & not alow to same
-    const checkScope = (event) => {
-        try {
-            let { value } = event.target
-
-            let result = props.dataSetLanguages.filter((language) => {
-                return value.toLowerCase() == language.title.toLowerCase()
-            })
-
-            if (result.length != 0) throw ("duplicate entry !")
-
-            setCheckUniqueScope(true)
-
-        } catch (error) {
-            console.log("CheckScope error : ", error)
-            setCheckUniqueScope(false)
-
-        }
-
-    }
+    
 
 
 
@@ -107,10 +88,7 @@ const AddLanguageUi = (props) => {
 
 
 
-                    <input onChange={(event) => {
-                        handleChange(event)
-                        checkScope(event)
-                    }}
+                    <input onChange={handleChange}
                         className="form-control form-check" type="text" name='scope' value={formData.scope} placeholder="Scope" />
 
 

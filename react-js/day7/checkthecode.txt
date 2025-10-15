@@ -1,0 +1,99 @@
+use the i am sharing you my 'frontend' and 'backend' folder both are in the same same folder 'day7'
+where in my i am able to successfully fetch my information create a simplified version of files, means remove the unwanted things expecially from the server which is not necessary now : 
+
+>> main.jsx:
+import {createRoot} from 'react-dom/client'
+import App from './App.jsx'
+
+createRoot(document.getElementById('root')).render(
+    <App />
+)
+
+>> App.jsx:
+import React, {useState, useEffect} from "react";
+import {fetchData} from './api/test.js'
+
+//styling
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
+
+const App = () => {
+    const [responseData, setResponseData] = useState(null)
+
+    useEffect(() => {
+        const getTestData = async () => {
+            try{
+                const response = await fetchData();
+                setResponseData(response.data);
+            } catch(err) {
+                console.log('Error while fetching dataset:',err)
+            }
+        };
+        getTestData();
+    }, [])
+
+return (
+    <>
+    <button className="btn bg-dark text-light" onClick={fetchData}>
+        <h1>CLICK TO FETCH DATA</h1>
+    </button>
+    {responseData && (
+        <div>
+            <h1>Message : {responseData.message}</h1>
+            <h1>Checkcode : {responseData.checkcode}</h1>
+            <div>
+                <strong>UserData</strong>
+                <h1>Name : {responseData.userData.name}</h1>
+                <h1>Phone : {responseData.userData.phone}</h1>
+                <h1>City : {responseData.userData.city}</h1>
+                <h1>State : {responseData.userData.state}</h1>
+            </div>
+        </div>
+    )}
+    </>
+)
+}
+export default App;
+
+>> api/test.js
+import axios from 'axios'
+let baseUrl = `${import.meta.env.VITE_API_URL}/test`
+
+export async function fetchData() {
+    try{
+        let result = await axios({
+            method: 'GET',
+            url: `${baseUrl}/hello`
+        })
+        return result
+    } catch(err) {
+        throw err
+    }
+}
+
+>> frontend/.env
+VITE_API_URL = http://localhost:4001
+
+
+
+and in  my backend
+server.js 
+
+import express from "express";
+import cors from "cors"
+let app = express() 
+let port = 4001
+app.use(express.urlencoded({extended:true}))
+app.use(express.json())
+app.use(express.static('public'))
+let corsOptions = {
+    origin: "*",
+    method: "*"
+}
+app.use(cors(corsOptions))
+app.get("/test/hello",(req,res) => {
+    res.status(200).json({message:'reached to the backend test route!', checkCode : true, userData: {name: 'ritesh laxman itankar',phone:876796925551, city: 'Nagpur', state: 'Maharashtra'}})
+})
+app.listen(port,() => {
+    console.log('server is running on port number' ,port)
+})

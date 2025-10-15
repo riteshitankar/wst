@@ -1,0 +1,138 @@
+Perfect 👍 You’ve already got everything working — so the goal now is just **to simplify and clean up** your `frontend` and `backend` code by removing anything that’s not really needed.
+
+Below is a **simplified and clean version** of your setup for the same functionality — fetching and displaying data from `/test/hello`.
+
+---
+
+## ✅ **Simplified Frontend (React)**
+
+### 📄 `main.jsx`
+
+```jsx
+import { createRoot } from 'react-dom/client';
+import App from './App.jsx';
+
+createRoot(document.getElementById('root')).render(<App />);
+```
+
+---
+
+### 📄 `App.jsx`
+
+```jsx
+import React, { useState, useEffect } from 'react';
+import { fetchData } from './api/test.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+const App = () => {
+  const [data, setData] = useState(null);
+
+  const handleFetch = async () => {
+    try {
+      const response = await fetchData();
+      setData(response.data);
+    } catch (err) {
+      console.error('Error fetching data:', err);
+    }
+  };
+
+  useEffect(() => {
+    handleFetch();
+  }, []);
+
+  return (
+    <div className="container text-center mt-4">
+      <button className="btn btn-dark mb-4" onClick={handleFetch}>
+        CLICK TO FETCH DATA
+      </button>
+
+      {data && (
+        <div>
+          <h3>Message: {data.message}</h3>
+          <p>Checkcode: {String(data.checkCode)}</p>
+          <div className="border p-3 rounded">
+            <h5>User Data</h5>
+            <p>Name: {data.userData.name}</p>
+            <p>Phone: {data.userData.phone}</p>
+            <p>City: {data.userData.city}</p>
+            <p>State: {data.userData.state}</p>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default App;
+```
+
+---
+
+### 📄 `api/test.js`
+
+```js
+import axios from 'axios';
+
+const baseUrl = `${import.meta.env.VITE_API_URL}/test`;
+
+export async function fetchData() {
+  return axios.get(`${baseUrl}/hello`);
+}
+```
+
+---
+
+### 📄 `.env`
+
+```
+VITE_API_URL=http://localhost:4001
+```
+
+*(No spaces around the `=` — it can cause issues in `.env` files)*
+
+---
+
+## ✅ **Simplified Backend (Express)**
+
+### 📄 `server.js`
+
+```js
+import express from "express";
+import cors from "cors";
+
+const app = express();
+const port = 4001;
+
+app.use(cors());
+app.use(express.json());
+
+app.get("/test/hello", (req, res) => {
+  res.json({
+    message: "Reached the backend test route!",
+    checkCode: true,
+    userData: {
+      name: "Ritesh Laxman Itankar",
+      phone: 876796925551,
+      city: "Nagpur",
+      state: "Maharashtra",
+    },
+  });
+});
+
+app.listen(port, () => {
+  console.log(`✅ Server running on http://localhost:${port}`);
+});
+```
+
+---
+
+## 🧹 Key Cleanups Done
+
+* Removed unnecessary `express.static`, `express.urlencoded`, and custom CORS options (defaults are fine for this test API).
+* Unified key names (`checkCode` instead of `checkcode` for consistent casing).
+* Simplified the frontend fetch and render logic.
+* Removed redundant imports (`bootstrap.bundle.min.js` is not needed since we’re not using JS-based Bootstrap components).
+
+---
+
+Would you like me to also show how to organize the folder structure neatly (like where to keep each file under `day7/frontend` and `day7/backend`)?

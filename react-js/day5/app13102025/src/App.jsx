@@ -1,6 +1,6 @@
 import React,{useState} from "react";
-// import Forui from './Components/comp1.jsx'    // working
-import Forui from './Components/comp2.jsx'
+import Forui from './Components/comp1.jsx'    // working
+// import Forui from './Components/comp2.jsx'
 import LanguageGrid from './Components/languagegrid.jsx'
 import {languages} from './Components/Dataset.js'
 
